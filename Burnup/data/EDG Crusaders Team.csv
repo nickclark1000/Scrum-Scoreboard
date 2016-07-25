@@ -1,0 +1,515 @@
+Project: DesignGalleryProject    Server: elite-tfsapp.elitecorp.com\DTSCollection    Query: Remaining 3.0    List type: Flat    ,,,,,,,,,
+ID,Work Item Type,Tags,Title,Effort,State,Iteration Path,Area Path,Severity,Created Date
+38575,Product Backlog Item,,(3.0.0) TESTING (BETA - RC1),0,Done,\3.0.0\3.0 Beta,\Solution Manager\Testing,,15/12/2015 2:26 PM
+38555,Product Backlog Item,Capitalize,"* [AUTOMATION] Write tests for Namespace Editor, priority = 1",8,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,,15/12/2015 8:16 AM
+38551,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Version History,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,15/12/2015 7:45 AM
+38550,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Mark as production,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,15/12/2015 7:45 AM
+38549,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Conflict Resolve,8,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,15/12/2015 7:45 AM
+17896,Product Backlog Item,Analyzed; Capitalize; SCRUM OF SCRUM,~(3.0.0) SOLUTION MANAGER: Plugin VD Integration - Ability to convert a Visual Design Component to a Stylesheet Component,20,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,27/11/2014 11:38 AM
+38548,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Regression - Lock/Unlock,5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,15/12/2015 7:44 AM
+38547,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Main form,3,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,,15/12/2015 7:43 AM
+38545,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Regression - Check-in/Check-out,8,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,15/12/2015 7:42 AM
+38544,Product Backlog Item,BLOCKED,~(3.0.0) SOLUTION MANAGER: Regression - Import tool,5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,15/12/2015 7:41 AM
+38543,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - XML Editor,1,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,,15/12/2015 7:40 AM
+23772,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER\TREEVIEW DISPLAY\WORKFLOWS: New workflow creation 'from existing',3,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,24/03/2015 12:14 PM
+24729,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER: XML Editor integration,5,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,10/04/2015 8:48 AM
+27263,Product Backlog Item,Analyzed; Capitalize,"(3.0.0) SOLUTION MANAGER: Component Editor: If component checked in while open in editor, close editor tab/windows",3,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,,25/05/2015 2:09 PM
+38542,Product Backlog Item,,~(3.0.0) SOLUTION MANAGER: Regression - Document preview,3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,15/12/2015 7:39 AM
+28132,Product Backlog Item,BLOCKED; Capitalize; SCRUM OF SCRUM,(3.0.0) DOCUMENTATION: [KNOWN ISSUE] SOLUTION MANAGER: It's neccessary to implement restore of workflow properties(workflow matches and description),0,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,,10/06/2015 8:30 AM
+28879,Product Backlog Item,Analysed; Capitalize,(3.0.0) SOLUTION MANAGER: Implement progress control - for checkin,3,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,24/06/2015 10:51 AM
+29190,Bug,Analyzed; Verify,VERIFY: I can relocate Workflow into the another Workflow,0.5,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,2 - High,26/06/2015 8:55 AM
+29197,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER: Repository refresh (manual only),2,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,26/06/2015 3:19 PM
+38541,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER:  Regression - Repository editor,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,15/12/2015 7:38 AM
+29264,Product Backlog Item,Analysed; Capitalize,(3.0.0) SOLUTION MANAGER: Implement progress control - for checkout,3,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,29/06/2015 11:49 AM
+29265,Product Backlog Item,Analysed; Capitalize,(3.0.0) SOLUTION MANAGER: Implement progress control - for application load,3,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,29/06/2015 11:51 AM
+29275,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER: Treeview: multiple repository operations to be done as a batch request,5,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,,29/06/2015 4:10 PM
+29479,Bug,Analyzed; PM-PriorityHigh,* (3.0.0) SOLUTION MANAGER: New WF Menu displayed if Right Click not directly on existing WF Name,2,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,3 - Medium,08/07/2015 10:29 AM
+29708,Bug,Analyzed; PM-PriorityHigh; Verify,VERIFY: (3.0.0) SOLUTION MANAGER: Preview: Getting Error when attempting preview,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,3 - Medium,13/07/2015 9:26 AM
+29761,Product Backlog Item,Capitalize; SCRUM OF SCRUM,(3.0.0) SOLUTION MANAGER: Enhance Workflow designer plugin with ribbon bar support (PHASE 1 - Basic),2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,,14/07/2015 3:32 PM
+29894,Product Backlog Item,Capitalize,(3.0.0) TESTING: PERFORMANCE: WF Performance Comparisons for SM Repository (TPR),2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager\Testing,,20/07/2015 10:45 AM
+38519,Product Backlog Item,,~(3.0.0) SOLUTION MANAGER: Write traceability matrix,5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,14/12/2015 11:03 AM
+38518,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: BETA RC1: Smoke testing,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,14/12/2015 11:00 AM
+38515,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Stress testing,3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager\Testing,,14/12/2015 10:30 AM
+30046,Bug,Analyzed; PM-PriorityMed,VERIFY:(3.0.0) SOLUTION MANAGER: Mouseover of Lock Icon not showing correct time,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,3 - Medium,22/07/2015 10:00 AM
+30131,Bug,Analyzed; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: Getting false validation error on Workflow name,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,23/07/2015 8:17 AM
+30404,Bug,PM-PriorityMed,Verify: (3.0.0) SOLUTION MANAGER: Conflict indicator doesn`t work well for child component in case of conflict name,0.5,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,3 - Medium,28/07/2015 9:15 AM
+30652,Bug,Analyzed; PM-PriorityHigh; Verify,VERIFY: (3.0.0) SOLUTION MANAGER: PREVIEW: Use of regex to match WF to source file not working,0.5,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,3 - Medium,31/07/2015 11:35 AM
+30723,Bug,Analyzed; PM-PriorityLow,Verify: (3.0.0) SOLUTION MANAGER: Issue with CheckIn if Workspace Local Folder differs from one used at CheckOut,0.5,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,05/08/2015 8:29 AM
+38514,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: BETA RC2: End-to-end testing,3,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager\Testing,,14/12/2015 10:27 AM
+31724,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Rename Workflow Designer tab,2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,21/08/2015 11:18 AM
+38513,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Compatibility testing,2,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,,14/12/2015 10:23 AM
+31793,Bug,PM-PriorityHigh,(3.0.0) Solution Manager: Deleting workspace - missing buttons in the confirmation dialog,1,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,3 - Medium,25/08/2015 12:53 PM
+31795,Bug,PM-PriorityMed,"(3.0.0) Solution Manager: Excess context menu item ""Cancel"" in several places",2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,4 - Low,25/08/2015 1:17 PM
+38512,Product Backlog Item,,~ (3.0.0) SOLUTION MANAGER: System testing,3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,14/12/2015 10:23 AM
+38511,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: UX testing,5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager\Testing,,14/12/2015 10:21 AM
+31809,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Mark a file as production ready,5,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,25/08/2015 3:46 PM
+31833,Bug,PM-PriorityMed,"(3.0.0) Solution Manager: Editor tabs - wrong shortcut for ""Close"" in the context menu",1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,4 - Low,26/08/2015 9:30 AM
+31932,Product Backlog Item,Analyzed; Capitalize,~1 - (3.0.0) Solution Manager: Update EDG.API/SM to have Component.Parent as a list(of Workflow),5,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,27/08/2015 3:23 PM
+31934,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Revisit metadata saving functions for the matches,3,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,27/08/2015 3:43 PM
+31937,Product Backlog Item,Analyzed; Capitalize,~2 - (3.0.0) Solution Manager: Update Cache methods to handle Shared Components,5,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,27/08/2015 4:16 PM
+31949,Product Backlog Item,Analyzed; Capitalize,VERIFY: (3.0.0) SOLUTION MANAGER: Moving and Renaming a component needs to handle Shared Components,0.5,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,27/08/2015 4:59 PM
+31950,Product Backlog Item,Analyzed; Capitalize,VERIFY: (3.0.0) SOLUTION MANAGER: Update Merge process to take into account Shared Components,0.5,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,27/08/2015 5:04 PM
+31951,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER: Add new Shared Component View,8,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,27/08/2015 5:06 PM
+31952,Product Backlog Item,Analyzed; Capitalize,~(3.0.0) SOLUTION MANAGER: Share component Context Menu,13,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,27/08/2015 5:07 PM
+31964,Product Backlog Item,Analyzed; Capitalize,~(3.0.0) SOLUTION MANAGER: UnShare component Context Menu,8,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,28/08/2015 9:38 AM
+32252,Product Backlog Item,Capitalize; DEV Feedback,~ DEV: (3.0.0) SOLUTION MANAGER: Improve the Solution Manager build process for testing,2,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager\Dev,,03/09/2015 9:08 AM
+32409,Bug,PM-PriorityHigh,* (3.0.0)Solution Manager:Workflow components not showing in treeview on SM restart,1,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,2 - High,04/09/2015 2:15 PM
+32458,Bug,PM-PriorityHigh,Verify: (3.0.0) SOLUTION MANAGER: The state of components are corrupted in case of resolve conflict,0.5,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,08/09/2015 5:14 AM
+32459,Bug,PM-PriorityMed,Verify: (3.0.0) Solution Manager: The metadata file is appeared in case of unlock workflow or component,0.5,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,08/09/2015 5:20 AM
+32469,Bug,PM-PriorityMed,(3.0.0) Solution Manager: User cannot create  aworkflow after creating workspace(at once),2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,08/09/2015 7:22 AM
+32475,Bug,PM-PriorityMed,(3.0.0)Solution Manager: The workflow tree should be opened in case when user creates new component under it,2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,3 - Medium,08/09/2015 7:32 AM
+32478,Bug,PM-PriorityHigh,* VERIFY: (3.0.0)Solution Manager: The function of renaming of workflow and component has been broken,0.5,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,2 - High,08/09/2015 7:54 AM
+38507,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Testing 3.0 pre Beta Regression cleanup,0,Done,\3.0.0\3.0 Beta,\Solution Manager,,14/12/2015 10:17 AM
+32485,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Conflict Indicator not triggered,3,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,08/09/2015 10:21 AM
+32572,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Link to online help,0.5,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,10/09/2015 11:49 AM
+32573,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: About screen,2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,10/09/2015 11:50 AM
+32574,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: UX Cleanup,2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,10/09/2015 11:54 AM
+38506,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Verify defects,0,Done,\3.0.0\3.0 Beta,\Solution Manager,,14/12/2015 10:12 AM
+32581,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Check-out validation on conflicts,2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,,10/09/2015 1:38 PM
+32595,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: TESTING: Limited Regression Testing,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager\Testing,,10/09/2015 4:11 PM
+32596,Product Backlog Item,Capitalize,(3.0.0) Sprint 34 - Sanity Testing of EDG 3.0,2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager\Testing,,10/09/2015 4:11 PM
+32597,Product Backlog Item,Capitalize,(3.0.0) Sprint 35 - Sanity Testing of EDG 3.0,2,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager\Testing,,10/09/2015 4:13 PM
+38477,Product Backlog Item,Capitalize,"* [AUTOMATION] Write tests for Variable Editor, priority = 1",3,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,,11/12/2015 11:10 AM
+38302,Product Backlog Item,Beta,~~(3.0.0) Repository Explorer: Implement batch operations to improve performance,13,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,09/12/2015 11:04 AM
+38301,Product Backlog Item,Capitalize,SPIKE: Investigate enabling 'Option Strict' in Solution Manager and Visual Designer,2,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,,09/12/2015 11:01 AM
+38300,Product Backlog Item,,~ (3.0.0) Repository Explorer: Implement UX for enhanced - Context menu,8,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,09/12/2015 10:59 AM
+38299,Product Backlog Item,,~ (3.0.0) Repository Explorer: Implement Toolbar,8,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,09/12/2015 10:58 AM
+38273,Product Backlog Item,Capitalize,~ (3.0.0) DEV: Include latest version of Workflow Designer libraries in Solution Manager,2,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,08/12/2015 9:43 AM
+32606,Product Backlog Item,Capitalize,(3.0.0) Smoke Testing of Sprint 32,1,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,10/09/2015 4:26 PM
+32607,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: TESTING: Smoke Testing of Sprint 33,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager\Testing,,10/09/2015 4:27 PM
+32608,Product Backlog Item,Capitalize,(3.0.0) Smoke Testing of Sprint 33,2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager\Testing,,10/09/2015 4:27 PM
+38151,Product Backlog Item,Beta,~~(3.0.0) Repository Explorer: Implement UX for enhanced repository communication,13,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,03/12/2015 9:55 AM
+38098,Bug,PM-PriorityLow,(3.0.0) SOLUTION MANAGER: The caption of editor window doesn`t change in case of renaming workflow/component via Properties,3,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,3 - Medium,02/12/2015 10:09 AM
+37934,Product Backlog Item,,* End-to-end testing support,5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,,01/12/2015 6:37 AM
+37743,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Enhance Repository Explorer,13,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,,25/11/2015 10:28 AM
+32627,Bug,PM-PriorityMed,* (3.0.0)Solution Manager:  Following exception is appeared in case when user move component from workflow to another workflow(many times),3,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,2 - High,11/09/2015 12:08 PM
+37742,Bug,PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: The duplicate of existing workflow has created If the user push 'Refresh' push more then one-two time,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,25/11/2015 9:40 AM
+32668,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Context Menu: Visual Designer Components (Cleanup),1,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,,16/09/2015 8:47 AM
+32809,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: MDI Documents Infrastructure Interfaces Design,3,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,18/09/2015 5:54 AM
+32810,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: MDI Documents Infrastructure - IDocumentManager Implementation,13,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,18/09/2015 5:55 AM
+32812,Product Backlog Item,Capitalize,(3.0.0) Solution Manager: Ribbon Integration - IRibbonIntegrator Interface & Ribbon Item Context Design,5,Done,\3.0.0\3.0 TPR\Sprint 90,\Solution Manager,,18/09/2015 5:59 AM
+33054,Product Backlog Item,Capitalize,SPIKE - (3.0.0) SOLUTION MANAGER: Updates to shared component storage in workflow repository,2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,,22/09/2015 3:58 PM
+37740,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: In case of add existing workflow name of workflow hasn`t extension,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,25/11/2015 9:38 AM
+33114,Bug,PM-PriorityHigh,"(3.0.0) SOLUTION MANAGER: Checking out an item, repopulates children that were moved",2,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,3 - Medium,23/09/2015 4:39 PM
+33128,Bug,Frontend Team; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: Incorrect validation of workspace name in case when the user copy of existing workspace,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,24/09/2015 8:12 AM
+33130,Bug,Frontend Team; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: All components except of Section Master are created with default name in upper case,0.5,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,4 - Low,24/09/2015 8:25 AM
+33131,Bug,Frontend Team; PM-PriorityMed,(3.0.0) SOLUTION MANAGER: User can add STYLESHEET via Add existing item  in Document Master but cannot create new one,3,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,24/09/2015 8:49 AM
+33132,Bug,PM-PriorityHigh,Verify - (3.0.0) SOLUTION MANAGER: Structure of components in local driver should be same as structure of components in SM,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,24/09/2015 9:35 AM
+33133,Bug,Frontend Team; PM-PriorityMed,(3.0.0) SOLUTION MANAGER: The user can run solution many times and every time a new instance is created,1,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,24/09/2015 9:41 AM
+33134,Bug,Frontend Team; PM-PriorityMed,"~ (3.0.0) SOLUTION MANAGER: In case when user add existing Document Master under Workflow, Document Master looks like a STYLESHEET and has 'STYLESHEET' value in component tag of metadata",3,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,3 - Medium,24/09/2015 9:45 AM
+33194,Bug,PM-PriorityHigh,(3.0.0) VERIFY: SOLUTION MANAGER: Cannot create stylesheet component if parent Workflow not checked out,0.5,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,2 - High,28/09/2015 8:38 AM
+33226,Bug,PM-PriorityHigh,Verify - (3.0.0) SOLUTION MANAGER: Check-in for existing file crashes SM,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,29/09/2015 6:47 AM
+33231,Bug,Frontend Team; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: The last workspace is able to be deleted,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,29/09/2015 10:43 AM
+33386,Bug,PM-PriorityMed; Reopened,REOPENED: (3.0.0) SOLUTION MANAGER: The metadata file is appeared in case of unlock workflow or component,3,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,2 - High,01/10/2015 9:21 AM
+33387,Bug,PM-PriorityMed,VERIFY: (3.0.0) SOLUTION MANAGER: Conflict indicator doesn`t work well for child component in case of conflict name,3,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,01/10/2015 9:30 AM
+33466,Product Backlog Item,Capitalize,(3.0.0) Smoke Testing of Sprint 34,2,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager\Testing,,01/10/2015 12:35 PM
+37693,Bug,PM-PriorityMed; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Incorrect time in 'Modified date' column of 'Version History' window,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,25/11/2015 6:08 AM
+33533,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Share flag has lost in case of SM restart(or refresh treeview),1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,1 - Critical,02/10/2015 6:54 AM
+33540,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Share flag has not saved in REPO,1,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,1 - Critical,02/10/2015 6:57 AM
+33559,Bug,Frontend Team; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: The treeview window should be resized in case when the name of component too long,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,4 - Low,02/10/2015 9:04 AM
+33602,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER:  XML Editor - 'Format XML' for plain text crashes SM,2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,05/10/2015 7:55 AM
+33666,Product Backlog Item,Capitalize,~ (3.0.0) SOLUTION MANAGER: Shared component integration,13,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,05/10/2015 2:13 PM
+33702,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Workflow list icons are not aligned,2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,4 - Low,06/10/2015 11:59 AM
+33705,Bug,PM-PriorityHigh,~ (3.0.0) SOLUTION MANAGER: Bindings for the Repository shouldn't need to be changed out of the box,5,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,2 - High,06/10/2015 1:38 PM
+33726,Bug,Frontend Team; PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Exception while opening a vdc file to edit,3,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,2 - High,07/10/2015 5:19 AM
+33772,Product Backlog Item,Capitalize,~ (3.0.0) DEV: Investigate and improve the EDG.API.Repository wrapper class/projects performance,13,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager\Dev,,08/10/2015 10:22 AM
+33796,Bug,Frontend Team; PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Checking new component when parent one is checked out fails with expection,3,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,2 - High,09/10/2015 8:01 AM
+37674,Bug,PM-PriorityMed,* (3.0.0) SOLUTION MANAGER: Workspaces lost when upgrading versions,3,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,2 - High,24/11/2015 4:37 PM
+37658,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Conflict status icons are not aligned,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,4 - Low,24/11/2015 4:01 PM
+33842,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Move SM to MDI approach,13,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,,13/10/2015 9:29 AM
+33848,Bug,PM-PriorityHigh,* (3.0.0) SOLUTION MANAGER: Application crash after Drag&Drop single item up the hierarchy when no another check-outed items in parent directories,,Done,\3.0.0\3.0 TPR\Sprint 91,\Solution Manager,2 - High,13/10/2015 11:21 AM
+37657,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: XML Editor crashes if clicks are not exact in error pane,3,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,2 - High,24/11/2015 3:55 PM
+33869,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Change font color of 'Shared' files,0.5,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,13/10/2015 12:50 PM
+33881,Bug,Frontend Team,(3.0.0) SOLUTION MANAGER: Remove any placeholder functionality in Ribbon/File Menu,1,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,14/10/2015 4:46 AM
+34268,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Rename of Workflow deletes prior Workflow content,3,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,2 - High,15/10/2015 7:29 AM
+34438,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Cannot insert duplicate key row in object 'dbo.WFRepositoryFileDependecies' with unique index,3,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,1 - Critical,16/10/2015 7:21 AM
+34520,Product Backlog Item,Capitalize,VERIFY: (3.0.0) SOLUTION MANAGER: Issue with Checking in WF if Component name has a Apostrophe in it,0.5,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager\Testing,,19/10/2015 2:32 PM
+34564,Bug,Frontend Team; PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Check out file which has been already checked out crashes SM,2,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,2 - High,20/10/2015 8:18 AM
+34565,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Ability to have multiple references to a shared component,8,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,20/10/2015 8:28 AM
+34566,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Ability to create a new shared component,3,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,20/10/2015 8:36 AM
+34569,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Update splash screen,1,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,20/10/2015 8:40 AM
+34635,Product Backlog Item,Capitalize,(3.0.0) TESTING: TPR RELEASE: Smoke Testing,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager\Testing,,21/10/2015 1:40 PM
+34636,Product Backlog Item,Capitalize,(3.0.0) TESTING: TPR RELEASE: Exploratory Testing,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager\Testing,,21/10/2015 1:42 PM
+34650,Bug,PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Conflict indicator has displayed for components without conflict,5,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,22/10/2015 8:38 AM
+34670,Bug,Frontend Team; PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Matches Window freezes SM when minimized.,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,2 - High,22/10/2015 11:13 AM
+34788,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Ability to specify primary xaml file,5,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,27/10/2015 9:19 AM
+34805,Bug,PM-PriorityMed,(3.0.0) SOLUTION MANAGER: User can add Documents properties as much as he wants,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,28/10/2015 5:32 AM
+34809,Bug,PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Several UI defects in XML Editor,5,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,4 - Low,28/10/2015 8:02 AM
+34810,Bug,PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Incorrect indicator for component in case of unlock the component,3,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,28/10/2015 8:15 AM
+34813,Bug,PM-PriorityHigh,VERIFY: (3.0.0) SOLUTION MANAGER: Error message while opening VDC file to edit,0.5,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,28/10/2015 8:21 AM
+34815,Bug,PM-PriorityMed,(3.0.0) SOLUTION MANAGER: 'Resolve conflict' dialog window should be hidden automatically when user selects any item,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,28/10/2015 8:29 AM
+37654,Bug,PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: View->Refresh allows multiple clicks,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,4 - Low,24/11/2015 3:13 PM
+37650,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Workflow names cause issues with Deployment Tool,,Done,\3.0.0,\Solution Manager,1 - Critical,24/11/2015 1:33 PM
+37649,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Duplicate EDGSharedComponents workflows being created,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,24/11/2015 1:30 PM
+35229,Product Backlog Item,Capitalize; SCRUM OF SCRUM,(3.0.0) SOLUTION MANAGER: Workflow Configuration integration,13,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,,30/10/2015 8:55 AM
+37646,Bug,PM-PriorityHigh,"VERIFY: (3.0.0) SOLUTION MANAGER: Preview Plugin - Won't preview, throwing exception",0.5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,1 - Critical,24/11/2015 12:35 PM
+35363,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: 3e Workflow designations,8,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,,03/11/2015 12:13 AM
+37644,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Selecting large source files in preview crashes the application,3,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,1 - Critical,24/11/2015 12:12 PM
+37642,Bug,PM-PriorityLow,SPIKE: (3.0.0) SOLUTION MANAGER: Find/Replace window stays open after editors are closed,5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,3 - Medium,24/11/2015 11:21 AM
+37640,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Rename validation does not stop renaming for new workflow,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,24/11/2015 10:55 AM
+35401,Product Backlog Item,Frontend Team,(3.0.0) SOLUTION MANAGER: Document History on tab control,3,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,03/11/2015 8:56 AM
+35670,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Online help ribbon button is not context aware,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,,05/11/2015 8:53 AM
+35677,Bug,PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Tooltip of 'Conflict indicator' has no information,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,06/11/2015 5:37 AM
+35685,Product Backlog Item,,"(3.0.0) SOLUTION MANAGER: Create styled, standard document closing dialog for SM",2,Done,\3.0.0\3.0 TPR\Sprint 93,\Solution Manager,,06/11/2015 7:56 AM
+37639,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Rename context menu does not work when no extension,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,24/11/2015 10:49 AM
+37638,Bug,PM-PriorityLow,(3.0.0) SOLUTION MANAGER: Values in error pane in XML Editor is editable,2,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,4 - Low,24/11/2015 10:45 AM
+37637,Bug,PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Autohide window disappears when trying to right-click,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,24/11/2015 10:31 AM
+37636,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: New workflow is difficult to select when workflow list is full,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,4 - Low,24/11/2015 10:27 AM
+37631,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Long multiple check-in operation,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,24/11/2015 9:34 AM
+37628,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: The 'Check-in' window opens for ~10 sec (for a 'new' component only),0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,24/11/2015 8:58 AM
+37626,Product Backlog Item,Refactor?,~~ VERIFY: (3.0.0) SOLUTION MANAGER: Conflict resolution: Duplicate file name,1,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,24/11/2015 8:31 AM
+36651,Bug,,* (3.0.0) SOLUTION MANAGER: Check-in ignores name and description,2,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,11/11/2015 12:35 PM
+37624,Product Backlog Item,Refactor?,~~ VERIFY: (3.0.0) SOLUTION MANAGER: Conflict resolution: File unlocked,1,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,24/11/2015 8:27 AM
+37620,Bug,Refactor?,VERIFY: (3.0.0)SOLUTION MANAGER: Incorrect state of components in case when the two components with the same name under have created under the workflow,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,2 - High,24/11/2015 7:29 AM
+37581,Bug,Frontend Team; PM-PriorityLow,(3.0.0) Solution manager: WF Editor: Save under File menu not available,2,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,2 - High,23/11/2015 10:32 AM
+37578,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Validation of unique workflow name doesn`t work,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,23/11/2015 9:58 AM
+37557,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Incorrect components and workflow state in case when we have a 'duplicate workflow name' conflict,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,3 - Medium,23/11/2015 5:21 AM
+26016,Bug,PM-PriorityHigh,(3.0.0) Solution Manager: Actipro License causing unhandled execption,2,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,1 - Critical,04/05/2015 11:19 AM
+26545,Bug,,(3.0.0) EDG.Language - issue with exe project type [code defect],3,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,3 - Medium,12/05/2015 2:14 PM
+28371,Bug,Analyzed; Verify,VERIFY: (3.0.0) DEV: CODE Defect: A full refresh for the treeview display is not needed after every checkin,0.5,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,3 - Medium,11/06/2015 1:08 PM
+28609,Bug,Analyzed; Verify,"VERIFY: Workflow with name ""NEW WORKFLOW"" is overwritten if we create a new workflow",0.5,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,3 - Medium,18/06/2015 5:45 AM
+28620,Bug,PM-PriorityHigh,DEFECT: ConvertToXml-Data Direct does not play well with ApplyStylesheet,2,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,3 - Medium,18/06/2015 10:18 AM
+29834,Bug,Analyzed; PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Preview fails when the source file is missing the 'encoding' attribute,2,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,2 - High,16/07/2015 10:26 AM
+30258,Bug,,"*!VERIFY! (3.0.0)SOLUTION MANAGER:When offline from repository, New Item Properties Dialog slow in displaying",0.5,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,3 - Medium,24/07/2015 7:47 AM
+30264,Bug,Verify,*!VERIFY! (3.0.0)SOLUTION MANAGER:Error if Workspace folder missing on application startup,0.5,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,3 - Medium,24/07/2015 9:26 AM
+30405,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: The application has stopped working when we click on the undo check out (if we don`t have connection to repository(offline mode)),2,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,2 - High,28/07/2015 9:18 AM
+30489,Bug,Analyzed,VERIFY: (3.0.0)SOLUTION MANAGER:Workflow Editor gives error on system with Visual Studio installed,0.5,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,2 - High,29/07/2015 8:44 AM
+30492,Bug,Verify,*!VERIFY! (3.0.0) SOLUTION MANAGER: Undo checkout causes problems with Workflows and Components,0.5,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,3 - Medium,29/07/2015 9:25 AM
+30708,Bug,,* (3.0.0) SOLUTION MANAGER:Drag and Drop of parent object into child object corrupts repository,3,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,1 - Critical,04/08/2015 3:16 PM
+30710,Bug,Analyzed; Verify,*!Verify! (3.0.0) DEFECT: SOLUTION MANAGER: Matches not checked in on first try.,0.5,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,3 - Medium,04/08/2015 4:08 PM
+30738,Bug,Verify,*!VERIFY! (3.0.0) SOLUTION MANAGER:Check-In of multiple Document Master files possible with multiple users,0.5,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,3 - Medium,05/08/2015 2:06 PM
+31121,Product Backlog Item,,* !Dev Only! (3.0.0) - SOLUTION MANAGER:Check-In of multiple Document Master files possible with multiple users,3,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,,12/08/2015 2:15 PM
+31198,Bug,Analyzed; PM-PriorityHigh,(3.0.0) File Acquisiton workflow halts if malformed XML placed in monitored Input Folder,2,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,2 - High,16/08/2015 2:11 PM
+31216,Bug,Analyzed; PM-PriorityMed,(3.0.0) Document Catalog Activity Connection String Editor dialog does not show all buttons within Workflow Designer by default,1,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,3 - Medium,17/08/2015 7:26 AM
+31229,Bug,Analyzed; PM-PriorityHigh,(3.0.0) Solution Manager/Work Flow Designer Plugin Possible Memory Leak,2,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,2 - High,17/08/2015 10:53 AM
+31238,Bug,,*Undo checkout does not delete local files,1,Done,\3.0.0\3.0 TPR\Sprint 87,\Solution Manager,3 - Medium,17/08/2015 2:13 PM
+31254,Bug,Analyzed; PM-PriorityMed,"~Activities:ConvertWordDocument:The setup of  ""restrictions"" doesn't work",1,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,3 - Medium,17/08/2015 4:05 PM
+31256,Bug,Analyzed,Activities:ConvertWordDocument:Incorrect work of encoding parameter in the process of convert any source file to xml,1,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,3 - Medium,17/08/2015 4:06 PM
+31265,Bug,Analyzed,(3.0.0) EvaluateXpath Activity XML Namespace Editor Dialog not fully displaying all buttons,1,Done,\3.0.0\3.0 TPR\Sprint 88,\Solution Manager,3 - Medium,18/08/2015 7:26 AM
+31715,Bug,Verify,VERIFY: (3.0.0) Solution Manager:Preview giving errors,0.5,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,2 - High,21/08/2015 8:53 AM
+31772,Bug,,(3.0.0_ConvertPDFDocument Activity:In WF Designer:Certificate Dialog Not showing Ok/Cancel Buttons,1,Done,\3.0.0\3.0 TPR\Sprint 89,\Solution Manager,3 - Medium,24/08/2015 3:55 PM
+33182,Bug,Analyzed; PM-PriorityMed,(3.0.0) File Acquisition: Empty try/catches in file acquisition workflow,2,Done,\3.0.0\3.0 TPR\Sprint 92,\Solution Manager,3 - Medium,25/09/2015 4:25 PM
+37466,Bug,Refactor?,VERIFY: (3.0.0)SOLUTION MANAGER: In case when the components has similary name the conflict indicator has appeared for both components,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,2 - High,18/11/2015 11:10 AM
+37465,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Exception while dragging a workflow,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,18/11/2015 9:29 AM
+37588,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Application crashes on workflow check-in,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,1 - Critical,23/11/2015 11:05 AM
+37462,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: In case when user creates two workflows with the same name after 'Resolve conflict' one of the workflow has deleted,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,2 - High,18/11/2015 8:40 AM
+37409,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Preview windows blocks the rest of the application from functioning,5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,2 - High,17/11/2015 9:15 AM
+37635,Bug,,(3.0.0) SOLUTION MANAGER: Interacting with workflow list as it loads locks the machine,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,1 - Critical,24/11/2015 10:09 AM
+37408,Bug,PM-PriorityLow; Refactor?,VERIFY (3.0.0) SOLUTION MANAGER: Unhandled IO exception when moving a component,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,4 - Low,17/11/2015 9:07 AM
+37406,Bug,PM-PriorityLow; Refactor?,* (3.0.0) SOLUTION MANAGER: Users can restore previous versions of components that are not checked-out,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,17/11/2015 8:47 AM
+37405,Bug,PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Restoring a previous component version will copy the production flag from another version,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,4 - Low,17/11/2015 8:29 AM
+36791,Bug,Refactor?,VERIFY: (3.0.0)SOLUTION MANAGER: Cannot select text via mouse during the rename of component,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,4 - Low,13/11/2015 7:24 AM
+36790,Bug,Refactor?,VERIFY: (3.0.0)SOLUTION MANAGER: 'Mark as production' flag should be changed in SHARED file,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,13/11/2015 6:12 AM
+36789,Bug,Refactor?,VERIFY: (3.0.0)SOLUTION MANAGER: 'Mark as production' doesn`t in repo for SHARED component,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,13/11/2015 5:55 AM
+36660,Bug,Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: SM crashes when we select New for the empty EDGSHAREDCOMPONENTS workflow without connection to a workspace,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,1 - Critical,12/11/2015 3:56 AM
+36659,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Error while evaluating xpath expression in Visual Designer plugin,2,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,2 - High,12/11/2015 3:22 AM
+36647,Bug,PM-PriorityMed; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Workspaces Options doesn't save Authentication - None,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,11/11/2015 10:49 AM
+36645,Bug,PM-PriorityHigh,VERIFY: (3.0.0) SOLUTION MANAGER: Crash after deleting workspace,,Done,\3.0.0,\Solution Manager,1 - Critical,11/11/2015 10:13 AM
+36641,Bug,Refactor?,"VERIFY: (3.0.0) SOLUTION MANAGER: Renaming component: if unallowed symbols are present, SM doesn't notice and just delete changes",0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,4 - Low,11/11/2015 9:37 AM
+36637,Bug,PM-PriorityLow,* (3.0.0) SOLUTION MANAGER: Several pop-up windows opens on the primary monitor,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,11/11/2015 8:54 AM
+36629,Bug,PM-PriorityHigh; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Opening Version History crashes SM when connection to Repository is lost,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,1 - Critical,11/11/2015 7:32 AM
+36273,Product Backlog Item,Refactor?,~~ VERIFY: (3.0.0) SOLUTION MANAGER: Treeview: Allow users to delete New components,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,10/11/2015 2:00 PM
+37643,Bug,,(3.0.0) SOLUTION MANAGER: Closing the application with Find/Replace open keeps dialog open,1,Done,\3.0.0\3.0 TPR\Sprint 94  (3.0.0 TPR As Deliverable),\Solution Manager,3 - Medium,24/11/2015 11:38 AM
+32576,Product Backlog Item,,~(3.0.0) INSTALL: TTX Separate Install Package,5,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,10/09/2015 12:00 PM
+36167,Product Backlog Item,Capitalize,(3.0.0) TPR release - build check list,0,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,,10/11/2015 10:53 AM
+35378,Bug,PM-PriorityMed; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: SM has issues with access to the path,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,03/11/2015 5:51 AM
+35368,Bug,PM-PriorityMed; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Error while check-in a modified workflow,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,03/11/2015 4:40 AM
+35330,Bug,PM-PriorityMed,VERIFY: (3.0.0) SOLUTION MANAGER: Repository url are not able to be changed,0.5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,3 - Medium,02/11/2015 10:41 AM
+35082,Bug,PM-PriorityHigh,VERIFY: (3.0.0) SOLUTION MANAGER: The Choose context menu item in Workflow Designer throws an exception,0.5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,2 - High,29/10/2015 8:23 AM
+35081,Bug,PM-PriorityHigh,"~~ (3.0.0) SOLUTION MANAGER: The ""Save change"" dialog window should be appeared when user closes workflow designer window in case when workflow has any changes",3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,3 - Medium,29/10/2015 8:12 AM
+34818,Bug,PM-PriorityMed; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: User cannot check in/check out the workflow when the SM has several workspaces,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,2 - High,28/10/2015 8:50 AM
+34817,Bug,PM-PriorityHigh,(3.0.0) SOLUTION MANAGER: Workflow Designer shows 'Save Workflow' dialog when we switch on another editor,1,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,3 - Medium,28/10/2015 8:49 AM
+34812,Bug,PM-PriorityLow; Refactor?,* VERIFY: (3.0.0) SOLUTION MANAGER: The content of component should be removed in case of UNDO CHECK OUT,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,3 - Medium,28/10/2015 8:20 AM
+33868,Product Backlog Item,Refactor?,~~ VERIFY: (3.0.0) SOLUTION MANAGER: Option to tell Solution Manager to work offline,5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,13/10/2015 12:41 PM
+33828,Bug,Frontend Team; PM-PriorityMed,(3.0.0) SOLUTION MANAGER: Two Undo buttons appear when opening Visual Designer plugin,2,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,4 - Low,13/10/2015 5:27 AM
+33827,Bug,Frontend Team; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: All Metadata files should be hidden,3,Done,\3.0.0\3.0 Beta,\Solution Manager,3 - Medium,12/10/2015 9:30 AM
+33201,Bug,Frontend Team; PM-PriorityLow,(3.0.0) SOLUTION MANAGER: The first symbol '_'   is gone in caption of editor window,1,Done,\3.0.0\3.0 Beta,\Solution Manager,4 - Low,28/09/2015 9:29 AM
+33198,Bug,Frontend Team; PM-PriorityLow,VERIFY: (3.0.0) SOLUTION MANAGER: The caption of editor window doesn`t change in case of renaming component,0.5,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,3 - Medium,28/09/2015 9:09 AM
+33169,Bug,Frontend Team; PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Strange button has appeared in case of renaming component,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,25/09/2015 10:42 AM
+33105,Bug,PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: Mouse Scroll Stops Between Workflows,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,23/09/2015 10:46 AM
+32664,Bug,PM-PriorityLow; Refactor?,VERIFY: (3.0.0) SOLUTION MANAGER: WF Name Duplicate Validation differs from CheckIn WF Name Validations,0.5,Done,\3.0.0\3.0 Beta\Sprint 97,\Solution Manager,3 - Medium,15/09/2015 1:44 PM
+32480,Bug,PM-PriorityLow,(3.0.0) SOLUTION MANAGER: The prev. path doesn`t saved  in case when the one of files has selected,2,Done,\3.0.0\3.0 Beta\Sprint 96,\Solution Manager,4 - Low,08/09/2015 8:17 AM
+31802,Bug,PM-PriorityLow,(3.0.0) SOLUTION MANAGER: Child window-dialog doesn't appear in MS Windows taskbar,1,Done,\3.0.0\3.0 Beta,\Solution Manager,4 - Low,25/08/2015 2:20 PM
+31796,Bug,PM-PriorityLow,(3.0.0) SOLUTION MANAGER: Maximized window doesn't fit on the screen,3,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,4 - Low,25/08/2015 1:29 PM
+31741,Product Backlog Item,Refactor?,~~ VERIFY: (3.0.0) SOLUTION MANAGER: Conflict resolution: Missing Content File,1,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,21/08/2015 2:42 PM
+31230,Product Backlog Item,Analyzed; Refactor?,~~ VERIFY: (3.0.0) [EPIC] SOLUTION MANAGER: Reconciliation dialog - Repository,3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,17/08/2015 11:25 AM
+29895,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Performance testing,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,20/07/2015 10:50 AM
+29199,Product Backlog Item,Analyzed,(3.0.0) SOLUTION MANAGER: Changing a repository address on a workspace,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,,26/06/2015 3:57 PM
+27643,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER: CommentsWindow validation,1,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,,28/05/2015 2:50 PM
+21499,Product Backlog Item,Analyzed; Capitalize,(3.0.0) SOLUTION MANAGER: SOLUTION UPGRADE PATH - .DGW Import Tool,13,Done,\3.0.0\3.0 Beta\Sprint 95,\Solution Manager,,04/02/2015 12:05 PM
+3994,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Regression of functionality,0,Done,\3.0.0\3.0 Beta,\Solution Manager\Testing,,06/02/2014 10:43 AM
+11429,Product Backlog Item,Capitalize,~(3.0.0) INSTALL: Solution Manager Install Package,5,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,,02/09/2014 10:15 AM
+38538,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: New features testing,0,Done,\3.0.0\3.0 Beta,\Solution Manager,,15/12/2015 5:20 AM
+38708,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Smoke testing,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:49 AM
+38709,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: UX testing,2,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:49 AM
+38710,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Stress testing,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:49 AM
+38713,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER:  Regression - Repository editor,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:57 AM
+38714,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Document preview,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:58 AM
+38715,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - XML Editor,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:58 AM
+38716,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Import tool,5,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:59 AM
+38717,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Check-in/Check-out,5,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:59 AM
+38718,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Lock/Unlock,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 10:59 AM
+38720,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Conflict Resolve,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:00 AM
+38721,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Version History,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:01 AM
+38722,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Main form,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:01 AM
+38725,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Performance testing,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:02 AM
+38726,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: System testing,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:03 AM
+38727,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Compatibility testing,2,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:03 AM
+38728,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: End-to-end testing,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:03 AM
+38729,Product Backlog Item,,(3.0.0) TESTING (GA- RC2),0,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:20 AM
+38730,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Smoke testing,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:21 AM
+38731,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: UX testing,2,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:21 AM
+38732,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Stress testing,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:22 AM
+38733,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: Regression of functionality,0,Ready To Accept,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:23 AM
+38734,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Performance testing,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:23 AM
+38735,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: System testing,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:24 AM
+38736,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Compatibility testing,2,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:24 AM
+38737,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: End-to-end testing,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:24 AM
+38738,Product Backlog Item,,(3.0.0) SOLUTION MANAGER:  Regression - Repository editor,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:25 AM
+38739,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Document preview,8,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:25 AM
+38740,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - XML Editor,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:26 AM
+38741,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Import tool,5,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:26 AM
+38742,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Check-in/Check-out,5,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:26 AM
+38743,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Lock/Unlock,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:27 AM
+38745,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Conflict Resolve,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:27 AM
+38746,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Version History,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:28 AM
+38747,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Main form,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,18/12/2015 11:28 AM
+38752,Product Backlog Item,,"~ [AUTOMATION] Write tests for General Properties: Previewing Context, priority = 1",3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,21/12/2015 9:13 AM
+38953,Bug,,(3.0.0) SOLUTION MANAGER: Cannot create a new Workflow: Getting Object Reference not set error,,Done,\3.0.0,\Solution Manager,1 - Critical,04/01/2016 7:57 AM
+38998,Bug,,(3.0.0) VERIFY: SOLUTION MANAGER: Workflow Admin Tool: Package Version number seems off,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,3 - Medium,04/01/2016 2:14 PM
+38597,Bug,,VISUAL DESIGNER: Exception while opening complex properties when the Properties panel is undocked,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,16/12/2015 3:20 AM
+38724,Bug,,(3.0.0) SOLUTION MANAGER: Textboxes in Activity designers resizing contantly,1,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,18/12/2015 11:01 AM
+39209,Bug,,(3.0.0) VERIFY: SOLTUION MANAGER: Restore server version doesn`t work in case when user changes content in offline mode,1,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,3 - Medium,11/01/2016 5:01 AM
+39220,Product Backlog Item,,[AUTOMATION] Fix tests with failed status,8,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,11/01/2016 8:34 AM
+39232,Bug,,(3.0.0) SOLUTION MANAGER:  The user is not able to see that  its component has unlocked,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,11/01/2016 9:03 AM
+39265,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Solution Manager should support for selecting recent workspace from list of last 10 workspaces,3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,12/01/2016 5:34 AM
+39266,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Add URL to the 'Create New Workspace' window,0.5,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,,12/01/2016 5:37 AM
+39347,Product Backlog Item,,Restrict SM with using single EDGSharedComponents (for Beta Release),2,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,,13/01/2016 8:29 AM
+39399,Bug,,(3.0.0) SOLUTION MANAGER: The source control items are unavailabled in case of disconnect with the repository,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,14/01/2016 5:38 AM
+39407,Bug,,(3.0.0) SOLUTION MANAGER: Need to click two times to select 'Take Server for All',2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,14/01/2016 6:40 AM
+39437,Bug,HOLD; Workflow Team ???,VERIFY: (3.0.0) WORKFLOW DESIGNER: The 'Save' icon should be unavailable in case of save changes of workflow,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,14/01/2016 9:56 AM
+39491,Bug,Beta,(3.0.0) SOLUTION MANAGER: Incorrect case of unshare component,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,15/01/2016 3:15 AM
+39496,Bug,,(3.0.0) SOLUTION MANAGER: SM doesn't close Workflow Plugin tab after Merge,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,15/01/2016 5:23 AM
+39530,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Auto register EDG Activity pack with Workflow Designer,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,,15/01/2016 9:46 AM
+39531,Product Backlog Item,Beta; Capitalize,(3.0.0) SOLUTION MANAGER: Automatically load the most recent workspace,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,15/01/2016 9:56 AM
+39547,Bug,,(3.0.0) SOLUTION MANAGER: XML Editor intellisense missing,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,18/01/2016 4:30 AM
+39557,Bug,,(3.0.0) SOLUTION MANAGER: 3E Properties are not updated,1,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,2 - High,18/01/2016 7:45 AM
+39558,Bug,,(3.0.0) SOLUTION MANAGER: Usershould share/unshare component only if SHARED WORKFLOW checked out/new or local,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,2 - High,18/01/2016 7:46 AM
+39559,Bug,Beta,(3.0.0) SOLUTION MANAGER: In case of undo check out of  unshared component the regular component should be deleted,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,18/01/2016 7:51 AM
+39611,Bug,,(3.0.0) Solution Manager: Getting error when attempt to edit VDC component (actually during opening any plugin),3,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,1 - Critical,19/01/2016 7:01 AM
+39612,Bug,,(3.0.0) Solution Manager: Modifications made to template not used when adding new item,0.5,Done,\3.0.0\3.0 Beta\Sprint 98,\Solution Manager,3 - Medium,19/01/2016 8:20 AM
+39676,Product Backlog Item,BLOCKED,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Document preview,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,20/01/2016 11:01 AM
+39730,Product Backlog Item,Beta; Capitalize,(3.0.0) Solution Manager: Replace MessageBoxExImage.Warning.png with Approved Icon,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,20/01/2016 3:37 PM
+39731,Bug,Beta,(3.0.0) Solution Manager: Modification and Check In of existing shared components cannot be published,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,20/01/2016 3:42 PM
+39832,Bug,,(3.0.0) SOLUTION MANAGER: SM cannot get big size file from repository,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,3 - Medium,21/01/2016 7:52 AM
+39928,Product Backlog Item,Beta; Capitalize,DEV: Workflow Designer Plugin Integration,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,21/01/2016 5:10 PM
+39929,Bug,Beta,(3.0.0) SOLUTION MANAGER: Shared component issue with Includes of shared documents,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,21/01/2016 5:30 PM
+39969,Bug,Beta,(3.0.0)SolutionManager:Conflict Resolution Causes error logged on Server,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,22/01/2016 11:33 AM
+39974,Bug,Beta,(3.0.0)Solution Manager:Choose Items:Selected WF not added,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,22/01/2016 3:44 PM
+39994,Bug,,(3.0.0) SOLUTION MANAGER: Import tool doesn't work in Offline mode,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,25/01/2016 8:05 AM
+39995,Bug,Beta,(3.0.0) SOLUTION MANAGER: No Confirmation dialog appears for Undo Check-out,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,4 - Low,25/01/2016 10:02 AM
+40001,Bug,Beta,(3.0.0) SOLUTION MANAGER: No checks while duplicating Matches (in workflow properties),0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,4 - Low,25/01/2016 12:10 PM
+40003,Bug,Beta,(3.0.0) SOLUTION MANAGER: Memory leak after opening and closing Workflow Designer plugin,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,25/01/2016 12:59 PM
+40025,Bug,Beta,(3.0.0) SOLUTION MANAGER: The SM cannot handle the file with extensions in upper case,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,26/01/2016 6:16 AM
+40026,Bug,,* (3.0.0) SOLUTION MANAGER: Add icon for certificate files (.pfx),0.5,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,26/01/2016 6:18 AM
+40027,Bug,,(3.0.0) SOLUTION MANAGER: Check-In of multiple Doc Master/Doc property files possible with multiple users,1,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,26/01/2016 8:05 AM
+40052,Product Backlog Item,Capitalize,DEV: Enhance Error Handling,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,26/01/2016 9:59 AM
+40084,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC2: System testing,3,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,,26/01/2016 1:55 PM
+40086,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Repository editor,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,26/01/2016 2:03 PM
+40088,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Lock/Unlock,5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,26/01/2016 2:20 PM
+40089,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Version History,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,26/01/2016 2:22 PM
+40090,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Check-in,8,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,26/01/2016 2:26 PM
+40132,Bug,Beta,*(3.0.0) SOLUTION MANAGER: Choose item from tool box can throw intermittent error,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,27/01/2016 8:13 AM
+40140,Bug,Beta,*SOLUTION MANAGER: Is New version available flag doesn't set in case when workflow configration updated,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,27/01/2016 9:05 AM
+39984,Bug,HOLD; Workflow Team ???,VERIFY: WORKFLOW DESIGNER: No asterisk '*' in Workflow Designer,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,25/01/2016 5:15 AM
+40051,Bug,Beta,(3.0.0) SOLUTION MANAGER: Incorrect warning message while trying to check-in locked workflow by other,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,4 - Low,26/01/2016 9:30 AM
+40077,Bug,Beta,(3.0.0) SOLUTION MANAGER: No Merge Dialog appears while trying to check in workflow if newer version exists in repository,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,26/01/2016 11:11 AM
+40117,Bug,,*(3.0.0) SOLUTION MANAGER: Can add two existing files with the same names (lower and upper case),1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,4 - Low,27/01/2016 6:01 AM
+40126,Bug,HOLD; Workflow Team ???,VERIFY: SOLUTION MANAGER: wrong ctrl+S behaviour,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,27/01/2016 7:33 AM
+40149,Bug,,*SOLUTION MANAGER: Directory naming issue,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,27/01/2016 9:26 AM
+40155,Bug,,*SOLUTION MANAGER: User can delete original shared components files during delete shared component link in some cases,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,27/01/2016 9:58 AM
+40159,Bug,Beta,*(3.0.0) SOLUTION MANAGER: Cannot check  in Component twice when the component has opened in editor,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,27/01/2016 11:09 AM
+40164,Bug,,(3.0.0) SOLUTION MANAGER: UX: In case of choose items user hasn`t notification when it`s unselected existing items and selected another,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,27/01/2016 11:37 AM
+40165,Bug,,* (3.0.0) SOLUTION MANAGER: Workflow Designer version issue,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,27/01/2016 2:48 PM
+40224,Bug,Beta,*(3.0.0) SOLUTION MANAGER: Need to disable modification of checked-in workflow properties,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,4 - Low,28/01/2016 5:22 AM
+40280,Product Backlog Item,,(3.0.0)Solution Manager:Close and Save Editors when switching Workspaces,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,,28/01/2016 8:20 AM
+40286,Product Backlog Item,,"(3.0.0) SOLUTION MANAGER: Add ""Open Folder in File explorer"" menu option",3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,,28/01/2016 9:41 AM
+40341,Bug,,* VERIFY: (3.0.0)Solution Manager:Issue with Unlocking Locked WF,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,28/01/2016 1:47 PM
+40351,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Refresh,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:10 AM
+40352,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Visual Designer,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:13 AM
+40353,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Workflow Designer,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:14 AM
+40354,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Shared,5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:15 AM
+40355,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Components,5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:15 AM
+40356,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Workflows,5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:15 AM
+40357,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - XML Editor,3,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,29/01/2016 7:19 AM
+40362,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Check-out,5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,29/01/2016 7:26 AM
+40371,Bug,,SOLUTION MANAGER: User can broke workflow during unshare,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,29/01/2016 8:04 AM
+40372,Bug,,(3.0.0) SOLUTION MANAGER: The connection between SM and repository doesn`t restored in case of communication,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,29/01/2016 8:14 AM
+40412,Bug,Potential BETA,(3.0.0) SOLUTON MANAGER: Incorrect resolve conflict behaviour in case when another user delete component,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,01/02/2016 3:28 AM
+40415,Bug,,* (3.0.0) SOLUTION MANAGER: The SM doesn`t handle the case  when children can keep the name when the wf has renamed,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,01/02/2016 4:53 AM
+40417,Bug,Potential BETA,* (3.0.0) (BETA - RC1) Solution Manager:Error adding workflow with unknown components to Workspace,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,01/02/2016 7:08 AM
+40423,Bug,,* (3.0.0) SOLUTION MANAGER: The confirmation dialog doesn`t appear for unlock case,1,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,01/02/2016 7:41 AM
+40425,Bug,HOLD,(3.0.0) (BETA - RC1) Solution Manager:Error checking in WF with shared components,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,01/02/2016 8:36 AM
+40428,Bug,,(3.0.0) Application crash with default DM template,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,01/02/2016 9:09 AM
+40429,Bug,,* (3.0.0) SOLUTION MANAGER: Renaming workspace does not change app header and reposutory explorer header,1,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,01/02/2016 9:14 AM
+40430,Bug,,(3.0.0) SOLUTON MANAGER: Ribbon is loosing an active tab,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,01/02/2016 9:16 AM
+40435,Bug,HOLD; Workflow Team ???,VERIFY: SOLUTION MANAGER: Workflow editor prompts to save when already saved,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,01/02/2016 9:32 AM
+40439,Bug,HOLD; Workflow Team ???,VERIFY: Workflow editor changes aren't saved when field still have focus,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,2 - High,01/02/2016 10:02 AM
+40440,Bug,,(3.0.0) Verify: Solution Manager: Conflict resolution dialog appears during refresh in offline mode,0.5,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,3 - Medium,01/02/2016 10:12 AM
+40441,Bug,,* (3.0.0) SOLUTION MANAGER: The document preview plugin isn't wrapped in the 'try..catch',1,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,01/02/2016 10:18 AM
+40445,Bug,,(3.0.0) SOLUTION MANAGER: GUI glitch in the progress bar,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,01/02/2016 10:28 AM
+40446,Bug,,* (3.0.0) SOLUTION MANAGER: Version history: no tooltips,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,01/02/2016 10:41 AM
+40499,Bug,HOLD; Workflow Team ???,SOLUTION MANAGER: Ctrl+O and CTRL+N should be disable in Visual Designer plugin,3,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,4 - Low,02/02/2016 5:16 AM
+40500,Bug,HOLD; Workflow Team ???,VERIFY: SOLUTION MANAGER: Exception when using CTRL+O in Workflow Designer,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,02/02/2016 5:19 AM
+40504,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Main form,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager\Testing,,02/02/2016 5:30 AM
+40506,Product Backlog Item,,* (3.0.0) SOLUTION MANAGER: BETA RC1: Regression - Offline,2,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,,02/02/2016 5:34 AM
+40508,Bug,Potential BETA,* (3.0.0) SOLUTION MANAGER: Impossible to delete child of component link,0.5,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,2 - High,02/02/2016 6:37 AM
+40513,Bug,Potential BETA,(3.0.0) SOLUTION MANAGER: Link configuration error after delete/add the same link,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,02/02/2016 8:07 AM
+40516,Bug,,(3.0.0) SOLUTION MANAGER: The local data should be saved in case when someone has deleted component in repo,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,02/02/2016 8:50 AM
+40517,Bug,,(3.0.0) SOLUTION MANAGER: Local data is duplicated for user 1 in case when  user 2   change  the  workflow structure ,0.5,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,02/02/2016 9:17 AM
+40518,Bug,,(3.0.0) SOLUTION MANAGER: Out of memory exception,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,02/02/2016 9:19 AM
+40520,Bug,Potential BETA,* (3.0.0) SOLUTION MANAGER: Repository Table 'WFRepositoryUsers' can have different Application ID,1,Done,\3.0.0\3.0 Beta\Sprint 99,\Solution Manager,3 - Medium,02/02/2016 9:25 AM
+40523,Bug,,(3.0.0) SOLUTION MANAGER: No validation of XPath match expression,3,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,02/02/2016 9:38 AM
+40528,Bug,,* (3.0.0) SOLUTION MANAGER: Unable to rename file by just changing its extension,5,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,02/02/2016 10:28 AM
+40548,Bug,HOLD; Workflow Team ???,VERIFY: SOLUTION MANAGER: Save dialog appears after saving from ribbon,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,02/02/2016 12:23 PM
+40612,Bug,,(3.0.0) SOLUTION MANAGER: Incorrect work the 'Open with' functionality,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,03/02/2016 4:50 AM
+40629,Bug,,(3.0.0) SOLUTION MANAGER: Add validation in the merge when users create two components/wfs with the same name but one of them in uppercase ,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,03/02/2016 7:05 AM
+40630,Bug,,"* (3.0.0) SOLUTION MANAGER: Drag and drop: Parent can't be moved, if child is not checked out",5,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,03/02/2016 7:24 AM
+40637,Bug,,(3.0.0) Solution Manager: Restoring specific version from version history does not affect item's name and description,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,2 - High,03/02/2016 8:01 AM
+40646,Bug,,(3.0.0) SOLUTION MANAGER: Check the workflow name 'EDGSharedComponents' validation,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,03/02/2016 8:32 AM
+40664,Product Backlog Item,,XML Editor - Allow read-only for components not checked-out,5,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,,03/02/2016 10:17 AM
+40665,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC2: Regression - Check-out,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,,03/02/2016 10:20 AM
+40666,Product Backlog Item,,(3.0.0) SOLUTION MANAGER - Display progress dialog while loading plugins,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,,03/02/2016 10:21 AM
+40667,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC2: Regression - Check-in,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager\Testing,,03/02/2016 10:21 AM
+40668,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC2: Regression - Shared,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager\Testing,,03/02/2016 10:22 AM
+40669,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC2: Drag and Drop,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager\Testing,,03/02/2016 10:24 AM
+40685,Product Backlog Item,Capitalize,(3.0.0) SOLUTION MANAGER: BETA: Exploratory Testing,5,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,,03/02/2016 10:53 AM
+40452,Bug,Potential BETA,(RC1) SOLUTION MANAGER: File checked out by user becomes in conflict,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,3 - Medium,01/02/2016 1:03 PM
+40834,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Remember workspace connection state,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,,04/02/2016 9:34 AM
+40853,Bug,,"* (3.0.0) SOLUTION MANAGER: While creating new workspace if workspace folder does not exist, to first create it",1,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,4 - Low,04/02/2016 10:57 AM
+40854,Bug,Potential BETA,*SOLUTION MANAGER: Partial check-in/undo-check out of new shared component possible,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,04/02/2016 10:58 AM
+40855,Bug,Potential BETA,*SOLUTION MANAGER: Mark as deleted repo component must delete local child components,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,04/02/2016 11:03 AM
+40856,Bug,Potential BETA,*SOLUTION MANAGER: New shared component links must be deleted directly,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,04/02/2016 11:07 AM
+40987,Bug,,(3.0.0) SOLUTION MANAGER: New build cleans Recent Workspaces list,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,05/02/2016 10:34 AM
+40992,Product Backlog Item,,3.0.0) SOLUTION MANAGER: BETA RC2: Smoke testing,0.5,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,,05/02/2016 10:49 AM
+41016,Bug,,(3.0.0) SOLUTION MANAGER: User can`t check in the chain of newly created component if the parent link has been checked in,3,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,3 - Medium,08/02/2016 9:14 AM
+41018,Bug,Potential BETA,*(3.0.0) SOLUTION MANAGER: The newly created shared child should be unshared without  check-in process in case when parent has checked in,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,2 - High,08/02/2016 9:29 AM
+41034,Bug,,(3.0.0) SOLUTION MANAGER: The unshared items shouldn`t be available in case when shared component doesn`t have any link,2,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,08/02/2016 10:22 AM
+41037,Bug,,(3.0.0) SOLUTION MANAGER: User can not rename components first attempt,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,08/02/2016 11:42 AM
+41055,Bug,,(3.0.0) (BETA - RC2) SM: Workflow Properties: Matches do not show icons,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,08/02/2016 4:55 PM
+41162,Bug,Potential BETA,*(3.0.0) SOLUTION MAANGER: The worfklow configuration has lost in case of multiple using shared component with child,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,1 - Critical,09/02/2016 5:47 AM
+41185,Bug,,(3.0.0) SOLUTION MANAGER: Visual Designer doesn't save document,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,2 - High,09/02/2016 9:01 AM
+41186,Bug,,(3.0.0) SOLUTION MANAGER: Not loaded DocProperties in visual design component,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,09/02/2016 9:32 AM
+41187,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: BETA RC3: Regression - Shared,2,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,,09/02/2016 10:15 AM
+41227,Bug,,(3.0.0) SOLUTION MANAGER: Access denied error has appeared in case of drag and drop,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,10/02/2016 4:38 AM
+41234,Bug,,(3.0.0) SOLUTION MANAGER: Table and General properties removed from visual design document after switching between tabs,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,2 - High,10/02/2016 7:26 AM
+41236,Bug,,(3.0.0) SOLUTION MANAGER: Shared doc properties are not loaded to visual design document properties,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,10/02/2016 8:04 AM
+41238,Bug,,(3.0.0) SOLUTION MANAGER: Error during opening stylesheet from recent documents if this stylesheet was created by conversion from vdc,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,10/02/2016 8:26 AM
+41263,Bug,,(3.0.0) (BETA-RC2) Solution Manager: Preview crashes SM if solution 'un-chosen',2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,10/02/2016 10:03 AM
+41265,Bug,,(3.0.0) SOLUTION MANAGER: No name validation while converting visual design to stylesheet,3,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,10/02/2016 10:11 AM
+41271,Product Backlog Item,Capitalize,Upgrade to latest Workflow RC3,1,Done,\3.0.0\3.0 Beta\Sprint 100  (3.0.0 BETA As Deliverable),\Solution Manager,,10/02/2016 10:26 AM
+41276,Bug,,(3.0.0) (BETA-RC2) SOLUTION MANAGER: Many file types not recognised anymore.,5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,4 - Low,10/02/2016 11:05 AM
+41292,Bug,,(3.0.0) SOLUTION MANAGER: Loaded only first section properties,3,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,3 - Medium,11/02/2016 4:58 AM
+41524,Bug,,(3.0.0) SOLUTION MANAGER: Undo check-out doesn't undo the file type for vdc converted to xsl,2,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,11/02/2016 8:25 AM
+35705,Product Backlog Item,Analyzed; Capitalize,(3.0.0) DG WORKFLOWS: SOLUTION UPGRADE PATH - Convert blueprint distribution and plugins to XAML,13,Done,\3.0.0\3.0 GA\Sprint 105,\Solution Manager,,06/11/2015 9:54 AM
+37824,Product Backlog Item,Analyzed; Capitalize,(3.0.0) DG WORKFLOWS: SOLUTION UPGRADE PATH - Convert solution list and master component to XAML,13,Done,\3.0.0\3.0 GA\Sprint 105,\Solution Manager,,27/11/2015 9:46 AM
+37825,Product Backlog Item,Analyzed; Capitalize,(3.0.0) DG WORKFLOWS: SOLUTION UPGRADE PATH - Convert match list to XAML,13,Done,\3.0.0\3.0 GA\Sprint 105,\Solution Manager,,27/11/2015 9:50 AM
+42331,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER:  Regression - Offline mode,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:22 AM
+42332,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER:  Regression - Drag and Drop,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:23 AM
+42333,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Visual Designer,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:27 AM
+42334,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Workflow Designer,1,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:28 AM
+42335,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Component,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:29 AM
+42336,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Workflow,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:30 AM
+42337,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Shared,5,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,19/02/2016 4:37 AM
+42675,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Regression - Workflow,3,New,\3.0.0\3.0 GA,\Solution Manager\Testing,,29/02/2016 7:51 AM
+42683,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Regression - Shared,5,New,\3.0.0\3.0 GA,\Solution Manager,,29/02/2016 7:54 AM
+42784,Bug,,(3.0.0) SOLUTION MANAGER: VDC component under the Document Master doesnt get SHARED Document  properties ,1,Done,\3.0.0\3.0 GA\Sprint 101,\Solution Manager,3 - Medium,01/03/2016 8:01 AM
+41770,Product Backlog Item,,[AUTOMATION] Fix failed tests (Content Builder) in CI,5,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,17/02/2016 7:53 AM
+42429,Bug,,VERIFY: (3.0.0 GA) Solution Manager:Preview can crash SM if error in stylesheet,0.5,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,3 - Medium,22/02/2016 7:54 AM
+42439,Bug,,SPIKE: (3.0.0) GA: Preview leaving multiple instances of Adobe reader memory resident,2,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,2 - High,22/02/2016 11:39 AM
+43771,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Exploratory testing,1,Done,\3.0.0\3.0 GA\Sprint 102,\Solution Manager,,14/03/2016 8:33 AM
+43798,Bug,,(3.0.0) SOLUTION MANAGER: The Xpath Builder crashes while opening,3,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,1 - Critical,15/03/2016 7:29 AM
+43807,Product Backlog Item,,SPIKE: Solution Upgrade Path stories,5,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,15/03/2016 10:05 AM
+43850,Product Backlog Item,,[AUTOMATION] Analyze structure,13,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,16/03/2016 8:18 AM
+43859,Bug,,(3.0.0) SOLUTION MANAGER: Import tool: Cannot cancel 'Conflict Resolution` window in case of file with same name already exists ,1,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,3 - Medium,16/03/2016 8:41 AM
+43860,Bug,,(3.0.0) SOLUTION MANAGER: Import tool: The merge process in the import tool works very slow,3,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,2 - High,16/03/2016 8:45 AM
+43867,Bug,,(3.0.0) SOLUTION MANAGER: Import tool: the problem message should be informative,3,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,3 - Medium,16/03/2016 9:06 AM
+23240,Product Backlog Item,,SOLUTION MANAGER: XML/Errors Pane - Persist pane states,3,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,12/03/2015 12:50 PM
+44141,Bug,,* (3.0.0) SOLUTION MANAGER: The Solution  Manager has stopped working in case of double click on Plugins/Home tab,1,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,2 - High,18/03/2016 4:05 AM
+44285,Product Backlog Item,,(3.0.0) SOLUTION MANAGER: Exploratory testing,0,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,,22/03/2016 8:29 AM
+41235,Bug,,* VERIFY (3.0.0) SOLUTION MANAGER: Error while previewing vdc with another vdc included and doc properties are present,1,Done,\3.0.0\3.0 GA\Sprint 103,\Solution Manager,2 - High,10/02/2016 7:41 AM
+44583,Bug,,"(3.0.0) SOLUTION MANAGER: Asterisk symbol * and ""font editing"" appears in Visual Designer plugin",3,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,3 - Medium,30/03/2016 5:00 AM
+44593,Product Backlog Item,,SOLUTION MANAGER: Workflow Designer plugin - rebranding,2,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,30/03/2016 8:40 AM
+44633,Product Backlog Item,,Tune end-2-end testing enviroment,5,Done,\3.0.0\3.0 GA\Sprint 104,\Solution Manager,,31/03/2016 8:08 AM
+44635,Product Backlog Item,,[AUTOMATION] Estimation of SM autotests coverage ,3,Done,\3.0.0\3.0 GA\Sprint 105,\Solution Manager,,31/03/2016 8:26 AM
+45120,Product Backlog Item,,Miscellaneous,0,Done,\3.0.0\3.0 GA\Sprint 105,\Solution Manager,,13/04/2016 10:55 AM
+45063,Product Backlog Item,,Create Medium Sized Client 3.0 Solution,8,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,,12/04/2016 11:36 AM
+45182,Product Backlog Item,,Create Large Sized Client 3.0 Solution,13,Done,\3.0.0\3.0 GA\Sprint 109,\Solution Manager,,14/04/2016 10:51 AM
+45474,Bug,,3.0 Editor:Stylesheet: Issue with spaces if present in XSL variable declaration,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,19/04/2016 8:30 AM
+45493,Bug,,(3.0.0) SOLUTION MANAGER: Cannot restore the previous version of component via Version History,3,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,2 - High,19/04/2016 9:29 AM
+45713,Product Backlog Item,Analyzed; Capitalize,Solution Manager: Import Tool - Update master component,5,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,,20/04/2016 10:11 AM
+45714,Product Backlog Item,Analyzed; Capitalize,(3.0.0) DG WORKFLOWS: SOLUTION UPGRADE PATH - Select All on import,3,Done,\3.0.0\3.0 GA\Sprint 105,\Solution Manager,,20/04/2016 10:16 AM
+45993,Product Backlog Item,,Create Small Sized Client 3.0 Solution,5,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,,27/04/2016 10:19 AM
+46352,Product Backlog Item,,REPOSITORY EXPLORER: Choose Items dialog - Allow users to select or deselect all,2,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,,29/04/2016 2:32 PM
+32568,Product Backlog Item,Analyzed; Capitalize; Descope?,(3.0.0) INSTALL: Activity Library Package(s),5,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,,10/09/2015 11:40 AM
+40549,Bug,HOLD,(3.0.0) SOLUTION MANAGER: Process Manager Designer - Save button disappeared from ribbon bar,2,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,4 - Low,02/02/2016 12:25 PM
+46236,Bug,,Solution Manager: Import Tool - Email doesn`t handle the case when type is SINGLE or BATCH,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,28/04/2016 10:33 AM
+46242,Bug,,Solution Manager: Import Tool - Email 'BCC' value imported to 'CC' field,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,28/04/2016 10:51 AM
+46252,Bug,,Solution Manager: Import Tool - Email 'From' not imported,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,28/04/2016 11:18 AM
+46256,Bug,,(3.0.0) SOLUTION MANAGER: The SM doesn`t handle the  <OverwriteExistingFiles/> tag,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,28/04/2016 12:10 PM
+46331,Product Backlog Item,,SOLUTION MANAGER: Clean up dependencies EDG.SaxonWrapper,2,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,,29/04/2016 8:40 AM
+46490,Product Backlog Item,,Solution Manager: Preview plugin - Ability to edit loaded source file,5,Done,\3.0.0\3.0 GA\Sprint 109,\Solution Manager,,03/05/2016 1:29 PM
+46492,Product Backlog Item,,Solution Manager: Preview plugin - Provide different preview types,13,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,03/05/2016 2:04 PM
+46496,Product Backlog Item,,Solution Manager: Preview plugin - Preprocessing,13,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,03/05/2016 3:56 PM
+46498,Product Backlog Item,,Solution Manager: Preview plugin - Ability to preview with text source,13,Ready To Accept,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,03/05/2016 4:29 PM
+46511,Bug,,Solution Manager: Import tool - Document master ApplyStylesheet activity requires the template field be entered,3,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,04/05/2016 8:55 AM
+46526,Bug,,(3.0.0) SOLUTION MANAGER: AssignVariables doesn't assign values to variables,3,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,2 - High,04/05/2016 10:01 AM
+46580,Product Backlog Item,,Solution Manager: UX Cleanup - gather text used throughout the application,2,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,,05/05/2016 8:46 AM
+46588,Bug,,Solution Manager: Import Tool - Duplex setting is ignored,3,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,05/05/2016 9:20 AM
+46589,Bug,,Solution Manager: Import Tool - PDF Output is not being generated,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,05/05/2016 9:21 AM
+46590,Bug,,Solution Manager: Import Tool - Email activity is created when empty <Emails/> node exists,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,05/05/2016 9:21 AM
+46591,Bug,,Solution Manager: Import Tool - ConvertExcelDocument format is blank,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,05/05/2016 9:22 AM
+46592,Bug,,Solution Manager: Import Tool - Converter and template files are not added to the workspace,0.5,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,05/05/2016 9:22 AM
+46593,Bug,,Solution Manager: Import Tool - ConvertToXML paths should be expressions,1,Done,\3.0.0\3.0 GA\Sprint 106,\Solution Manager,3 - Medium,05/05/2016 9:23 AM
+46893,Product Backlog Item,,SPIKE: Investigate issues in Process Manager,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,,10/05/2016 9:43 AM
+46917,Bug,,"(3.0) Solution Manager: Import Tool - AppendDocument it`s necessary to handle the several XSL properties (FileCount,Overwrite)",1,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,10/05/2016 11:25 AM
+43849,Product Backlog Item,,[AUTOMATION] Write framework for test automation of SM,8,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,,16/03/2016 8:17 AM
+46953,Product Backlog Item,,Solution Manager: Move text into resource file,8,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,,11/05/2016 9:55 AM
+39950,Bug,,(3.0.0) Process Manager DESIGNER: Sometimes the Process Manager Designer doesn't load UI after several switching between tabs,2,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,4 - Low,22/01/2016 9:38 AM
+40436,Bug,,(3.0.0) (BETA - RC1) SOLUTION MANAGER: The Process Manager Designer Window overlays the file menu,2,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,01/02/2016 9:36 AM
+47021,Bug,,(3.0.0) SOLUTION MANAGER: Error while import - Component already exists in parent component,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,12/05/2016 3:16 AM
+47213,Bug,,Solution Manager: Visual Designer - Error occurs when opening a VDC with a section master ancestor,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,1 - Critical,15/05/2016 5:08 PM
+47305,Bug,,(3.0.0) SOLUTION MANAGER: Each elements of workflow must have the appropriate icon ,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,17/05/2016 4:55 AM
+47317,Bug,,(3.0.0) SOLUTION MANAGER: Import tool: Don`t create AssignVariables in the workflow if the blueprint doesn`t have  variables node,1,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,17/05/2016 9:49 AM
+47318,Product Backlog Item,,SPIKE: Preview Plugin,8,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,,17/05/2016 9:52 AM
+47343,Bug,,SOLUTION MANAGER: Error - Impossible to check-in second document master,2,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,3 - Medium,17/05/2016 1:07 PM
+47344,Bug,,"* SOLUTION MANAGER:  The ""IsReadyToProduction"" cannot be set while we check-in source process",2,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,17/05/2016 1:21 PM
+47382,Bug,,Solution Manager: Readonly components can be modified and saved,5,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,2 - High,19/05/2016 12:01 AM
+47409,Bug,,(3.0.0) SOLUTION MANAGER: User cannot open readonly components if they are shared,2,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,3 - Medium,19/05/2016 6:30 AM
+47416,Bug,,(3.0.0) SOLUTION MANAGER: 'Unhandled exception :LocalDataStoreSlot storage has been freed' is appeared,3,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,2 - High,19/05/2016 7:11 AM
+47433,Bug,,* Solution Manager: Internal error while downloading Shared. 'Add component operation - component with name '{0}' already exists in parent component '{1}'',3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,2 - High,19/05/2016 12:50 PM
+47440,Product Backlog Item,,3.0 end-to-end environment installation,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,,20/05/2016 6:34 AM
+47498,Bug,,(3.0.0) SOLUTION MANAGER: Import tool - No extension in ApplyStylesheet/Stylesheet Path/Folder parameter,2,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,2 - High,23/05/2016 12:38 PM
+47541,Bug,,* (3.0.0) SOLUTION MANAGER: Error while attempting to check-in and undo check-out xaml with deleted shared components,3,Done,\3.0.0\3.0 GA\Sprint 107,\Solution Manager,3 - Medium,24/05/2016 11:16 AM
+47711,Product Backlog Item,,[AUTOMATION] Set up the test repository environment,,New,\3.0.0\3.0 GA,\Solution Manager,,26/05/2016 6:18 AM
+47593,Bug,,* SOLUTION MANAGER: SplashScreen shows as 'AboutWindow' in taskbar,1,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,4 - Low,25/05/2016 9:13 AM
+47834,Product Backlog Item,,[AUTOMATION] Workspace Tests implementation (Sprint 108),8,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,,27/05/2016 3:47 AM
+48111,Product Backlog Item,,(3.0.0) Solution Manager: Add IsStylesheet flag support,3,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,,02/06/2016 9:05 AM
+48133,Product Backlog Item,,Group created 3.0 solution to single workspace,13,Done,\3.0.0\3.0 GA\Sprint 109,\Solution Manager,,02/06/2016 10:44 AM
+48160,Bug,,* BUG: Issue with a large number of selected workflows,2,Done,\3.0.0\3.0 GA\Sprint 108,\Solution Manager,3 - Medium,03/06/2016 11:05 AM
+48161,Product Backlog Item,,Repository Explorer - Limit file naming convention,8,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,,03/06/2016 11:07 AM
+48322,Product Backlog Item,,[AUTOMATION] Workspace Tests implementation (Sprint 110),13,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,,08/06/2016 3:44 PM
+48379,Bug,,(3.0.0) SOLUTION MANAGER: GetLatestVersion for shared link component which is under New component doesn't function,3,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,3 - Medium,09/06/2016 7:19 AM
+48380,Product Backlog Item,,SOLUTION MANAGER: Add 'Replace' option into Merge Dialog,8,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,,09/06/2016 7:32 AM
+48397,Bug,,Verify (3.0.0) SOLUTION MANAGER: Exception during Getting Latest Version of shared link component that was already removed,1,Done,\3.0.0\3.0 GA\Sprint 109,\Solution Manager,3 - Medium,09/06/2016 11:29 AM
+48399,Bug,,(3.0.0) SOLUTION MANAGER: The 'New version available' icon appears after switching between repositories,5,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,3 - Medium,09/06/2016 1:19 PM
+48583,Bug,,(3.0.0) The component status is not updated after opening a new dgwx file,2,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,3 - Medium,14/06/2016 9:55 AM
+48777,Bug,,(3.0.0) SOLUTION MANAGER: Error while importing particular solutions,3,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,3 - Medium,20/06/2016 5:49 AM
+41567,Product Backlog Item,Capitalize,(3.0.0) SECURITY: Protex Scan,2,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,11/02/2016 4:11 PM
+46895,Product Backlog Item,RC1,(3.0.0) SOLUTION MANAGER: Smoke testing on Win 7 32 bit,1,New,\3.0.0\3.0 GA,\Solution Manager,,10/05/2016 9:58 AM
+48852,Product Backlog Item,,Performance Assistance: Help Siarhei get 3.0 Client Solutions working on his environment,5,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,21/06/2016 9:00 AM
+48935,Bug,,SOLUTION MANAGER:  User cannot remove component in offline mode for workspace that has ever been connected to repository,3,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,4 - Low,22/06/2016 12:31 PM
+48991,Bug,,SOLUTION MANAGER: Automatically select a matched process in Workspace Tree in Preview plugin,1,Done,\3.0.0\3.0 GA\Sprint 110,\Solution Manager,4 - Low,23/06/2016 6:33 AM
+49400,Bug,,SOLUTION MANAGER: Error during import any solution and in AssignVariable expressions because of the last activities' changes,2,Done,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,1 - Critical,30/06/2016 10:28 AM
+49563,Product Backlog Item,,[AUTOMATION] Tests implementation (Sprint 111),13,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,07/07/2016 9:01 AM
+49735,Product Backlog Item,,Solution Manager: Preview plugin - Preprocessing - Intuitive activity list,8,Committed,\3.0.0\3.0 GA\Sprint 111,\Solution Manager,,11/07/2016 1:09 PM

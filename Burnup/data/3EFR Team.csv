@@ -1,0 +1,93 @@
+Project: FinancialReportingProject    Server: elite-tfsapp.elitecorp.com\FinancialReportingCollection    Query: 2.1 All Work Items    List type: Flat    ,,,,,,,,,,,
+ID,Work Item Type,Title,Assigned To,State,Tags,Effort,Iteration Path,Severity,Area Path,Closed Date,Created Date
+1381,Product Backlog Item,Phase 1 hardening,,New,Phase 1,40.1,\Version 2.1,,\,,15/11/2013 2:23 PM
+4543,Product Backlog Item,Performance Testing : Replication - Initial Population,,Done,Performance; QA; REMOVE ??,5,\Version 2.1\Sprint 1,,\,30/06/2016 12:11 PM,19/05/2014 11:06 AM
+5017,Product Backlog Item,***** DEFECTS REQUIRED FOR 2.1 RELEASE *****,,Approved,,0,\Version 2.1,,\,,10/06/2014 4:37 PM
+5097,Product Backlog Item,Performance Testing: Benchmark report generation performance Following Table Change and Preceding Performance Optimization,,Approved,,3,\Version 2.1,,\,,11/06/2014 3:58 PM
+5482,Product Backlog Item,----------- GL Detail Replication Optimization -------------(Release 2.1 Priority),,Approved,,0,\Version 2.1,,\,,07/07/2014 8:24 PM
+5863,Bug,"Bug - INS.REP - Validation passes if machine with efr share is not in the same domain as source, destination envs and shared for Everyone",,New,HARDEN GA RC1,1.1,\Version 2.1,3 - Medium,\,,04/08/2014 5:57 AM
+10242,Product Backlog Item,ADD:RPT DEFN - Create a Statement of Cash Flow template/standard report,"Brown, Lisa (Legal)",New,PM,3.1,\Version 2.1,,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT DEFINITIONS,,05/02/2015 1:03 PM
+10729,Product Backlog Item,ADD\MIG - Enhance connection logging to display which server is trying to be reached,,Approved,ENHANCEMENT,3,\Version 2.1,,\,,02/03/2015 12:58 PM
+10835,Product Backlog Item,VERIFY: INS.REP - Turn on Maintenance mode during SSMS re-initialization of replication,Shawn Steele,Done,ENHANCEMENT,1,\Version 2.1\Sprint 3,,\,18/07/2016 3:20 PM,10/03/2015 10:58 AM
+10952,Product Backlog Item,?????? TOP OF BACKLOG 2.1 ??????,,Approved,,0,\Version 2.1,,\,,12/03/2015 1:44 PM
+11868,Product Backlog Item,Compile results of testing in Chinese from PBI 11514 for Stakeholders/PM,"Brown, Lisa (Legal)",Approved,Needs PM Approval; QA; Release Priority,0,\Version 2.1,,\,,06/05/2015 2:41 PM
+12256,Product Backlog Item,FIXED IN: Replication performance tuning,,Approved,Release Notes; REPLICATION OPTIMIZATION - 12256,0,\Version 2.1,,\,,27/05/2015 9:12 AM
+12267,Product Backlog Item,INS.REP - Tuning- Post-snapshot file changes,Yury Stanevitch,Committed,,8,\Version 2.1\Sprint 3,,\,,27/05/2015 12:43 PM
+12272,Product Backlog Item,INS.REP - Tuning - Modify replication scripts/BCP,,New,HOLD,3.1,\Version 2.1,,\,,27/05/2015 12:52 PM
+12658,Product Backlog Item,DEV: Remove unused code for Account Definition Display Options form (WinForms),Pavel Sulimau,Done,,2,\Version 2.1\Sprint 2,,\,12/07/2016 9:36 AM,12/06/2015 11:32 AM
+12885,Product Backlog Item,Benchmark initialization times,Aliaksei Kirylau,Done,,8,\Version 2.1\Sprint 2,,\,12/07/2016 6:14 PM,24/06/2015 9:56 AM
+12901,Product Backlog Item,FIXED IN: Optimizing GL Detail replication initialization,,Approved,,0,\Version 2.1,,\FR INSTALLATION\FRINSTALL INITIAL REPLICATION,,24/06/2015 11:12 AM
+13127,Bug,BUG - ADD.INS - Incorrect title of popup message saying that downgrade is not allowed,Shawn Steele,Done,BUG; Exploratory; HOTFIX; Release Notes,1,\Version 2.1\Sprint 1,4 - Low,\,29/06/2016 11:10 AM,06/07/2015 10:01 AM
+13653,Product Backlog Item,REP: Shrink a 3EFR database with live replication,"Svidzerski, Anton",Done,Release Notes,5,\Version 2.1\Sprint 2,,\,13/07/2016 9:59 AM,05/08/2015 1:45 PM
+13665,Product Backlog Item,Integration Testing: 3E GLMerge and Renumber,,New,3E Integration; Needs PM Approval,13.3,\Version 2.1,,\,,06/08/2015 5:07 PM
+13666,Product Backlog Item,REP: Ensure that SQLServer memory consumption returns to normal after initializing replication,,New,HOLD,8.3,\Version 2.1,,\,,06/08/2015 5:10 PM
+14755,Bug,BUG - INS - Possible to remove Addin when XL is launched (no warning appears),Katsiaryna Petrashkevich,Done,BUG; Exploratory,5,\Version 2.1\Sprint 1,3 - Medium,\,30/06/2016 11:49 AM,29/09/2015 7:32 AM
+14777,Bug,BUG - ADD.SEL - scrolling appears when one of items on selection pane is selected.,"Svidzerski, Anton",Done,BUG; Exploratory; Release Notes,3,\Version 2.1\Sprint 1,4 - Low,\,28/06/2016 10:13 AM,30/09/2015 11:26 AM
+15366,Product Backlog Item,Phase 2 hardening,,New,Phase 2,40.1,\Version 2.1,,\,,23/10/2015 4:39 PM
+15367,Product Backlog Item,Phase 3 hardening,,New,Phase 3,40.1,\Version 2.1,,\,,23/10/2015 4:40 PM
+16390,Product Backlog Item,DOC: Document how to temporarily disable replication,,New,Needs PM Approval,1.1,\Version 2.1,,\,,08/12/2015 3:43 PM
+16391,Product Backlog Item,INS - Create maintenance scripts for re-indexing and update statistics,,New,Needs PM Approval,13.1,\Version 2.1,,\,,08/12/2015 3:46 PM
+16392,Product Backlog Item,INS - Create interface to allow implementation users to define maintenance schedule,,New,Needs PM Approval,8.3,\Version 2.1,,\,,08/12/2015 3:47 PM
+16393,Product Backlog Item,UPG - Upgrade maintenance for re-indexing and update statistics,,New,Needs PM Approval,5.3,\Version 2.1,,\,,08/12/2015 3:48 PM
+16395,Product Backlog Item,INS - Add a shortcut or link to documentation that describes how to change distributor_admin password,,New,Needs PM Approval,2.1,\Version 2.1,,\,,08/12/2015 4:20 PM
+16396,Product Backlog Item,INS - User should be prevented from naming their 3EFR database with a leading number,,New,Needs PM Approval,1.1,\Version 2.1,,\,,08/12/2015 4:22 PM
+16397,Product Backlog Item,SPIKE: Investigate throttling/deprioritization of replication,,New,Needs PM Approval; PM,5.3,\Version 2.1,,\,,08/12/2015 4:31 PM
+16414,Bug,UPG.REP - Enhancement - Create validation if database is NOT in Maintenance mode before replication will be upgraded,"Svidzerski, Anton",Done,Exploratory; Release Notes,2,\Version 2.1\Sprint 1,4 - Low,\,24/06/2016 10:23 AM,09/12/2015 11:01 AM
+16824,Bug,BUG - ADD.SEL - AS and AF panes are opened while corresponding buttons are disabled,Shawn Steele,Done,Exploratory; Release Notes,3,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI SELECTION PANE,24/06/2016 9:15 AM,15/01/2016 7:32 AM
+16836,Bug,BUG - ADD.SEL - Filter pane displays segments of previous env if to connect to another env with relaunching of XL instance,Katsiaryna Petrashkevich,Done,Exploratory,3,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI ACCOUNT SELECTIONS,28/06/2016 10:09 AM,18/01/2016 6:20 AM
+16891,Bug,BUG - ADD.AXS - Scroll w/mouse wheel doesn't work in Axis Editor,"Svidzerski, Anton",Done,Exploratory,3,\Version 2.1\Sprint 3,4 - Low,\,19/07/2016 9:02 AM,21/01/2016 11:20 AM
+16905,Bug,BUG - ADD - Column A blinks if Template Guide is ON and user activates different cells,,New,REMOVE ??,3,\Version 2.1,4 - Low,\,,22/01/2016 8:03 AM
+16947,Product Backlog Item,Integration Testing: 3E GLDetail to Summary,,New,3E Integration; Needs PM Approval,,\Version 2.1,,\,,27/01/2016 2:27 PM
+17237,Product Backlog Item,DEV: Enable Code Coverage for unit tests,Aliaksei Kirylau,Approved,,8,\Version 2.1,,\,,05/02/2016 1:22 PM
+17250,Product Backlog Item,Performance Testing: Benchmark numbers for Current GL Detail generation,"Svidzerski, Anton",Committed,,13,\Version 2.1\Sprint 3,,\,,05/02/2016 4:11 PM
+17437,Product Backlog Item,SPIKE: Establish a plan for How the team will proceed with Making the Excel Add-in work the cloud. ,"Padbiarezski, Aleh",Done,,13,\Version 2.1\Sprint 2,,\,12/07/2016 6:06 PM,15/02/2016 1:40 PM
+17776,Bug,ADD.RPP - GLBook Header \ Footer option for Budget DS returns selected and disabled glbook selected in Runtime Options,"Svidzerski, Anton",Done,Excel 2013; Exploratory; Release Notes,2,\Version 2.1\Sprint 2,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT PREVIEW,05/07/2016 6:10 AM,01/03/2016 8:56 AM
+18014,Product Backlog Item,"DEV: Modify ""EFR Setup Utility"" - ExecuteSQLForDataSet method ",,Approved,,2,\Version 2.1,,\,,09/03/2016 2:25 PM
+18307,Bug,BUG: ADD.AXE - WIN8.1 Account Definition label alignment,Shawn Steele,Done,,3,\Version 2.1\Sprint 1,3 - Medium,\,23/06/2016 9:36 AM,18/03/2016 9:09 AM
+18538,Bug,BUG - ADD.DS - Year Offset and Month Offset invalid values do not reset to their valid values,"Svidzerski, Anton",Done,Exploratory; Release Notes,2,\Version 2.1\Sprint 1,4 - Low,\,28/06/2016 10:13 AM,30/03/2016 8:14 AM
+18934,Product Backlog Item,DEV: Increase build retention policy in our build definitions. ,,Approved,,2,\Version 2.1,,\,,14/04/2016 9:55 AM
+19088,Product Backlog Item,---------- Integration ----------,,New,,0,\Version 2.1,,\,,25/04/2016 1:54 PM
+19090,Product Backlog Item,QA: Compatibility testing with MatterSphere - End of Release,,New,,,\Version 2.1,,\,,25/04/2016 2:32 PM
+19091,Product Backlog Item,QA: Compatibility testing with OpenText - Mid Release,,New,,,\Version 2.1,,\,,25/04/2016 2:37 PM
+19092,Product Backlog Item,QA: Compatibility testing with OpenText - End of Release,,New,,,\Version 2.1,,\,,25/04/2016 2:38 PM
+19102,Bug,BUG: ADD.RPD MatterSphere causes invalid save prompt in unmodified report definitions,,New,HOLD,8.1,\Version 2.1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT DEFINITIONS,,26/04/2016 3:06 PM
+19141,Product Backlog Item,DEV: Enhance document generation logging to include acctindex count and formula plotting times,Yury Stanevitch,Committed,,5,\Version 2.1\Sprint 3,,\,,02/05/2016 10:26 AM
+19143,Product Backlog Item,ADD.IN - Excel 2016 Add-in certification (Release 2.1 Priority),Shawn Steele,Committed,Lewis & Rice,5,\Version 2.1\Sprint 3,,\FR EXCEL ADD IN REPORT EDITOR,,02/05/2016 10:44 AM
+19177,Bug,BUG: unable to use keyboard only no report open screen,,Done,2.0_HardeningRC1; Release Notes,3,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT DEFINITIONS,28/06/2016 11:57 AM,03/05/2016 9:53 AM
+19178,Bug,Bug: Cancel of saving prompt closing axis editor,"Svidzerski, Anton",Done,2.0_HardeningRC1; Release Notes,5,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI AXIS EDITOR,24/06/2016 10:21 AM,03/05/2016 10:27 AM
+19188,Bug,INS.DB - Install with standard reports will fail if max Db size set to 5 Mb,,New,2.0_HardeningRC1; HOLD,2,\Version 2.1,4 - Low,\FR INSTALLATION\FRINSTALL DATABASE,,05/05/2016 7:47 AM
+19263,Bug,Bug ADD.ASD: AS is opened when db is in maintenance mode.,"Svidzerski, Anton",Done,2.0_HardeningRC1; Release Notes,3,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI ACCOUNT SELECTIONS,28/06/2016 11:45 AM,05/05/2016 10:17 AM
+19349,Bug,"ADD - Focus is not moved to cell, selected with mouse wheel, when user inserts DS/AS/AF",Shawn Steele,Done,2.0_HardeningRC1; Release Notes,3,\Version 2.1\Sprint 2,4 - Low,\,05/07/2016 3:23 PM,12/05/2016 8:54 AM
+19352,Bug,ADD.INS - FR tab is not launched when Addin is installed (reproduces sometimes) ,,New,2.0_HardeningRC1; HOLD,,\Version 2.1,3 - Medium,\FR INSTALLATION\FRINSTALL INITIAL REPLICATION,,12/05/2016 9:53 AM
+19612,Bug,ADD.DO - Sort By -> Add button is disabled for Axis if neighour Axis has Add button disabled,,Done,2.0_HardeningRC2; Release Notes,2,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI ACCT DEF DISPLAY OPTION,29/06/2016 8:59 AM,25/05/2016 9:59 AM
+19613,Bug,ADD.DO - Remove buttons in Sort by list are not visible in certain scenario,Katsiaryna Petrashkevich,Done,2.0_HardeningRC2; Release Notes,2,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI ACCT DEF DISPLAY OPTION,24/06/2016 10:15 AM,25/05/2016 11:32 AM
+19617,Bug,ADD.RPP - DF will be truncated if to run summarized by report and DF contains value by which report was not summarized (valid for some segments only),Shawn Steele,Done,2.0_HardeningRC2; Release Notes,1,\Version 2.1\Sprint 1,3 - Medium,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT GENERATION,23/06/2016 8:52 AM,27/05/2016 7:53 AM
+19649,Bug,ADD.RPP - Close button on confirmation message opens this window again,,Done,2.0_HardeningRC2; Release Notes,1,\Version 2.1\Sprint 1,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT DEFINITIONS,24/06/2016 1:52 PM,31/05/2016 8:00 AM
+19780,Bug,BUG - RMT - Invalid error message if environment has invalid credentials,,Done,2.0_HardeningRC4; rel,3,\Version 2.1\Sprint 1,4 - Low,\,29/06/2016 11:00 AM,08/06/2016 10:03 AM
+19815,Bug,BUG - ADD.RPP - Excel 2013: Report Preview and Drill default to home tab instead of the Financial Reporting Tab,Shawn Steele,Done,,3,\Version 2.1\Sprint 1,3 - Medium,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT PREVIEW,24/06/2016 10:00 AM,10/06/2016 2:18 PM
+19819,Product Backlog Item,DEV: Remove Persons Table from FR Database,Yury Stanevitch,Done,,1,\Version 2.1\Sprint 1,,\,23/06/2016 12:06 PM,10/06/2016 2:23 PM
+19833,Product Backlog Item,Installation Manager provides an upgrade option from version 2.0 to 2.1.,Aliaksei Dudko,Approved,,3,\Version 2.1,,\,,13/06/2016 6:44 PM
+19854,Bug,BUG - ADD - Connection to environment in the 2nd instance is active on UI after SQL connection timeout error,Katsiaryna Petrashkevich,Done,Excel 2013; Release Notes,5,\Version 2.1\Sprint 2,4 - Low,\FR EXCEL ADD IN REPORT EDITOR\FRAI REPORT PREVIEW,04/07/2016 11:34 AM,17/06/2016 6:03 AM
+20013,Product Backlog Item,INS:Upgrade Finalize Upgrades to 3R FR v2.1,,New,PM,,\Version 2.1,,\,,28/06/2016 2:03 AM
+20035,Product Backlog Item,~SUPPORT: Weirfoulds Problem with the 3E FR Upgrade from 1.2 to 2.0 - Null Account Selection Sort Option,Shawn Steele,Done,,3,\Version 2.1\Sprint 2,,\,12/07/2016 9:34 AM,28/06/2016 12:53 PM
+20044,Product Backlog Item,Performance Testing on NEW GL Detail generation & Compare to Benchmarks on OLD architecture,,Approved,,13,\Version 2.1,,\,,29/06/2016 1:30 PM
+20045,Product Backlog Item,SPIKE:  Investigate Required Indexes for GL Detail Report Generation,Yury Stanevitch,Done,GLDETAIL; Performance,5,\Version 2.1\Sprint 2,,\,12/07/2016 5:49 PM,29/06/2016 1:38 PM
+20046,Product Backlog Item,Adapt GLDetail Report Generation to Work with New EFR_GLDetail Table,Yury Stanevitch,Ready To Test,GLDETAIL; Performance,3,\Version 2.1\Sprint 3,,\,,29/06/2016 1:46 PM
+20047,Product Backlog Item,Improve GL Detail Report Generation Performance,"Padbiarezski, Aleh",Committed,,5,\Version 2.1\Sprint 3,,\,,29/06/2016 1:59 PM
+20069,Product Backlog Item,Review and Update Test Cases,Shawn Steele,Ready To Accept,,5,\Version 2.1\Sprint 3,,\,,30/06/2016 1:02 PM
+20071,Product Backlog Item,SPIKE: Establish a plan for How the team will proceed with Making Replication Work in the Cloud,,Approved,,13,\Version 2.1,,\,,30/06/2016 2:38 PM
+20074,Product Backlog Item,SPIKE: Establish a plan for How the team will proceed with Making Report Generation Work in the Cloud,,Approved,,13,\Version 2.1,,\,,30/06/2016 2:44 PM
+20076,Product Backlog Item,*HOTFIX TO 2.0: Installation Manager - Need a way to roll back the upgrade when an error occurs. ,Aliaksei Kirylau,Ready To Accept,,5,\Version 2.1\Sprint 3,,\,,30/06/2016 8:11 PM
+20117,Work Order,Daily Scrum Discussion items,,Closed,,0,\Version 2.1\Sprint 2,,\,,05/07/2016 2:12 PM
+20118,Product Backlog Item,Support - SCT(Sales) - Error on  Save of Account Selection and Re-cache.,Shawn Steele,Done,,,\Version 2.1\Sprint 2,,\,13/07/2016 9:38 AM,05/07/2016 2:13 PM
+20131,Product Backlog Item,Write report generation runtime statistics to preview workbook,,Committed,,3,\Version 2.1,,\FR ADMINISTRATION\FRADM ADMINISTRATIVE FUNCTIONS,,06/07/2016 10:58 AM
+20141,Product Backlog Item,Document How to add new environments to config.xml after upgrade,Shawn Steele,Done,PM; Release Notes,1,\Version 2.1\Sprint 2,,\FR INSTALLATION\FRINSTALL ADD-IN,14/07/2016 9:34 AM,07/07/2016 5:39 PM
+20143,Product Backlog Item,Header/Footer Formatting- Usability Enhancements,,New,PM or BA,5,\Version 2.1,,\,,07/07/2016 8:44 PM
+20144,Product Backlog Item,Header/Footer Add additional Header Value- Usability Enhancements,,New,PM or BA,,\Version 2.1,,\,,07/07/2016 8:49 PM
+20148,Product Backlog Item,Data Source Amount Type - Change default order,Pavel Sulimau,Done,Release Notes,1,\Version 2.1\Sprint 2,,\,14/07/2016 9:35 AM,10/07/2016 1:24 PM
+20182,Product Backlog Item,Install Manager Add Additional Fields to Installation Form,Pavel Sulimau,Committed,,5,\Version 2.1\Sprint 3,,\,,14/07/2016 10:16 AM
+20183,Product Backlog Item,Replication:  GLAcct.NxUnit,,New,PM,,\Version 2.1,,\,,14/07/2016 10:21 AM
+20249,Product Backlog Item,INS.Cloud: EFR database should support installation on a cloud VM SQL Server instance.,,New,,,\Version 2.1,,\,,15/07/2016 11:03 AM
+20250,Product Backlog Item,INS.Cloud: EFR replication should support FR DB on a cloud VM SQL Server instance.,,New,,,\Version 2.1,,\,,15/07/2016 11:09 AM
+20251,Product Backlog Item,POC.Cloud: Install FR database on Azure SQL. ,,New,,,\Version 2.1,,\,,15/07/2016 11:14 AM
+20266,Product Backlog Item,QA: Update release notes for Sprint 1,Shawn Steele,Committed,,0.5,\Version 2.1\Sprint 3,,\,,19/07/2016 12:16 PM
