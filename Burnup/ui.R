@@ -70,8 +70,10 @@ dashboardPage(
   ),
   dashboardBody(
     fluidRow(
-      box(plotlyOutput("BURNUP_CHART")),
-      box(plotlyOutput("VELOCITY_CHART")),
+      box(plotlyOutput("BURNUP_CHART"),width=12)
+    ),
+    fluidRow(
+      box(plotlyOutput("VELOCITY_CHART"),width=12),
       bsModal("myModal",
           "New Team",
           "tabBut",
@@ -134,7 +136,7 @@ dashboardPage(
       )
     ),
     fluidRow(
-      box(dataTableOutput('vtable'))
+      box(dataTableOutput('vtable'),width=12)
     ),
     tags$head(tags$script(src="custom.js"))
   )
