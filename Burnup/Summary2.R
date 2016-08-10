@@ -10,27 +10,25 @@ source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsReleaseS
 SetTfsCollection()
 SetTfsProject()
 SetTfsTeam()
+default.area.path <- GetDefaultTeamAreaPath()
 
 current.release <- GetCurrentRelease()
 current.major.release <- current.release$current.major.release
 current.minor.release <- current.release$current.minor.release
 if(is.null(current.minor.release)) {
   current.release <- current.release$current.major.release
- # current.release.sprints <- GetReleaseSprints(current.major.release)
 } else {
   current.release <- current.release$current.minor.release
- # current.release.sprints <- GetReleaseSprints(current.minor.release)
 }
 
-release.summary.df <- data.frame(RELEASE_ITERATION_ID=current.release$id, RELEASE_NAME=current.release$name, SPRINT_ITERATION_ID=current.release$children[[1]]$id, SPRINT_NAME=current.release$children[[1]]$name, SPRINT=c(1:nrow(current.release$children[[1]])), START_DATE=as.Date(current.release$children[[1]]$attributes$startDate), END_DATE=as.Date(current.release$children[[1]]$attributes$finishDate))
+release.summary.df <- data.frame(RELEASE_ITERATION_ID=current.release$id, RELEASE_NAME=current.release$name, SPRINT_ITERATION_ID=current.release$children[[1]]$id, SPRINT_NAME=current.release$children[[1]]$name, SPRINT_INDEX=c(1:nrow(current.release$children[[1]])), START_DATE=as.Date(current.release$children[[1]]$attributes$startDate), END_DATE=as.Date(current.release$children[[1]]$attributes$finishDate))
 
-#CURRENT_SPRINT <- 2
 today <- format(Sys.Date())
 for(i in 1 : nrow(release.summary.df)) {
   if(release.summary.df$START_DATE[i] <= today && today <= release.summary.df$END_DATE[i])
-    CURRENT_SPRINT <<- release.summary.df$SPRINT[i]
+    CURRENT_SPRINT_INDEX <<- release.summary.df$SPRINT_INDEX[i]
 }
-release.summary.df <- subset(release.summary.df, SPRINT < CURRENT_SPRINT)
+release.summary.df <- subset(release.summary.df, SPRINT_INDEX < CURRENT_SPRINT_INDEX)
 
 iteration.ids <- paste(c(current.release$id,as.character(release.summary.df$SPRINT_ITERATION_ID)), collapse=",")
 work.item.ids <- GetReleaseWorkItemIds(iteration.ids)
@@ -58,17 +56,17 @@ if(nrow(release.summary.df)>4){
 }
 
 ###Defects summary
-release.summary.df <- inner_join(release.summary.df, 
+release.summary.df <- left_join(release.summary.df, 
                                  rename(
-                                   subset(work.item.df, System.WorkItemType=="Bug") 
-                                   %>% group_by(System.IterationId) 
-                                   %>% summarise(DEFECTS_COMPLETED_COUNT=n(),
-                                                 DEFECTS_COMPLETED_POINTS=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE))
+                                   subset(work.item.df, System.WorkItemType=="Bug") %>%
+                                   group_by(System.IterationId) %>%
+                                   summarise(DEFECTS_COMPLETED_COUNT=n(),
+                                             DEFECTS_COMPLETED_POINTS=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE))
                                    , SPRINT_ITERATION_ID=System.IterationId), 
                                  by="SPRINT_ITERATION_ID")
 
 ###PBI summary
-release.summary.df <- inner_join(release.summary.df, 
+release.summary.df <- left_join(release.summary.df, 
                                  rename(
                                    subset(work.item.df, System.WorkItemType=="Product Backlog Item") 
                                    %>% group_by(System.IterationId) 
@@ -78,7 +76,5 @@ release.summary.df <- inner_join(release.summary.df,
                                  by="SPRINT_ITERATION_ID")
 
 
-
-
 INPUT_DATA$TOTAL_RELEASE_POINTS = rowSums(cbind(INPUT_DATA$TOTAL_RELEASE_PBI_POINTS, INPUT_DATA$TOTAL_RELEASE_DEFECT_POINTS, INPUT_DATA$TOTAL_RELEASE_WORKORDER_POINTS), na.rm=TRUE)
-release.summary.df <- inner_join(release.summary.df, INPUT_DATA, by="SPRINT")
+release.summary.df <- inner_join(release.summary.df, INPUT_DATA, by="SPRINT_INDEX")

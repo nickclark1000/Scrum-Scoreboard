@@ -45,13 +45,13 @@ shinyServer(function(input, output) {
       source("Projections.data.R", local=TRUE)
       source("Burnup.plot.R", local=TRUE)
       cat(file=stderr(),"lmsss:",w$CURRENT_RELEASE_IDENTIFIER,"\n")
-      plotBurnupChart(w$SPRINT, w$COMPLETED_RELEASE_POINTS, w$TOTAL_RELEASE_POINTS, tail(v$TOTAL_RELEASE_POINTS,1), NO_CHANGE_LINE, TARGET_RELEASE_SPRINT, AVG_5_LM)
+      plotBurnupChart(w$SPRINT_INDEX, w$COMPLETED_RELEASE_POINTS, w$TOTAL_RELEASE_POINTS, tail(v$TOTAL_RELEASE_POINTS,1), NO_CHANGE_LINE, TARGET_RELEASE_SPRINT, AVG_5_LM)
     })
     
     output$VELOCITY_CHART <- renderPlotly({
       source("Velocity.plot.R", local=TRUE)
       last20 <- tail(release.summary.df, 20)
-      plotVelocityTimeSeries(last20$SPRINT, last20$VELOCITY, last20$PLANNED_SPRINT_VELOCITY, last20$VELOCITY_SMA_5)
+      plotVelocityTimeSeries(last20$SPRINT_INDEX, last20$VELOCITY, last20$PLANNED_SPRINT_VELOCITY, last20$VELOCITY_SMA_5)
     })
     output$vtable <- renderDataTable(release.summary.df, options=list(scrollX=TRUE))
     # output$team <- renderMenu({
