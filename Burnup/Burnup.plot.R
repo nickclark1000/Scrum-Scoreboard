@@ -1,4 +1,4 @@
-plotBurnupChart <- function(sprint, completedReleasePoints, totalReleasePoints, releaseName, yMax, noChangeVector, targetReleaseSprint, completedForecast){
+plotBurnupChart <- function(sprint, completedReleasePoints, totalReleasePoints, yMax, noChangeVector, targetReleaseSprint, completedForecast){
   # par(oma = c(3, 1, 1, 1))
   # plot(sprint, completedReleasePoints, main=paste(releaseName,"Release Burn-up"), xlab="Sprint", ylab="Points", xaxt='n', ylim=c(0, yMax+50), xlim = c(head(sprint,1),round(NC_LAST5AVG_INTERSECTION$x+1,0)))
   # 
@@ -45,7 +45,6 @@ plotBurnupChart <- function(sprint, completedReleasePoints, totalReleasePoints, 
  # m<-lm(tail(totalReleasePoints,5)~tail(sprint,5))
   #n<-lm(tail(completedReleasePoints,5)~tail(sprint,5))
   #BACKLOG5_LAST5AVG_INTERSECTION<-lmIntx(m,n)
-  cat(file=stderr(),"lm:",releaseName,"\n")
  # m<-loess(totalReleasePoints~sprint)
   df<-data.frame(Sprint=as.factor(sprint), COMPLETED=completedReleasePoints, TOTAL=totalReleasePoints)
   long_df <- df %>% tidyr::gather(Type, Points, c(COMPLETED,TOTAL))
@@ -57,6 +56,6 @@ plotBurnupChart <- function(sprint, completedReleasePoints, totalReleasePoints, 
     add_trace(x = c(tail(sprint,1), NC_LAST5AVG_INTERSECTION$x), y = c(max(totalReleasePoints),max(totalReleasePoints)), mode="lines",name="No Change",line=list(dash="dash",color="purple")) %>%
     add_trace(x=c(tail(sprint,1),BACKLOG5_LAST5AVG_INTERSECTION$x),y=c(tail(sprint,1)*AVG_5_LM$coef[2]+AVG_5_LM$coef[1],BACKLOG5_LAST5AVG_INTERSECTION$x*AVG_5_LM$coef[2]+AVG_5_LM$coef[1]),line=list(dash="dash",color="red"),showlegend = FALSE) %>%
     add_trace(x=c(tail(sprint,1),BACKLOG5_LAST5AVG_INTERSECTION$x),y=c(tail(sprint,1)*BACKLOG_AVG_5_LM$coef[2]+BACKLOG_AVG_5_LM$coef[1],BACKLOG5_LAST5AVG_INTERSECTION$x*BACKLOG_AVG_5_LM$coef[2]+BACKLOG_AVG_5_LM$coef[1]),line=list(dash="dash",color="orange"),showlegend = FALSE) %>%
-  layout(title=paste(releaseName,"Release Burn-up"), yaxis = list(rangemode = "tozero"),xaxis = list(autotick = FALSE, dtick=1),legend = list(x = 0.5, y = 0))
+  layout(title="Release Burn-up", yaxis = list(rangemode = "tozero"),xaxis = list(autotick = FALSE, dtick=1),legend = list(x = 0.5, y = 0))
   
 }

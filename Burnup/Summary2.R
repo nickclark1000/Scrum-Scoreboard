@@ -3,101 +3,82 @@ library(dplyr)
 ###load TTR for calculating moving averages
 library(TTR)
 
-source("tfs.R")
+source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsApiRequestHandler.R")
+source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsCollectionProjectTeam.R")
+source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsReleaseSummary.R")
 
-d$CREATED_DATE<-as.Date(d$Created.Date,"%d/%m/%Y")
+SetTfsCollection()
+SetTfsProject()
+SetTfsTeam()
 
-
-
-
-
-d <- subset(d, SPRINT >= FIRST_SPRINT | is.na(SPRINT))
-
-
-v<- setNames(aggregate(d$Effort, by=list(SPRINT=d$SPRINT), FUN=sum, na.rm=TRUE), c("SPRINT","VELOCITY"))
-
-
-s<-unique(d[c("SPRINT","RELEASE_NAME")])
-v<-left_join(v,s,by="SPRINT")
-
-
-v$SPRINT_INDEX=0
-for (i in 2:nrow(v)){
-  if(v$RELEASE_NAME[i]==v$RELEASE_NAME[i-1] & !is.na(v$RELEASE_NAME[i]) & !is.na(v$RELEASE_NAME[i-1]))
-    v$SPRINT_INDEX[i] = v$SPRINT_INDEX[i-1]+1
-  else
-    v$SPRINT_INDEX[i]=0
+current.release <- GetCurrentRelease()
+current.major.release <- current.release$current.major.release
+current.minor.release <- current.release$current.minor.release
+if(is.null(current.minor.release)) {
+  current.release <- current.release$current.major.release
+ # current.release.sprints <- GetReleaseSprints(current.major.release)
+} else {
+  current.release <- current.release$current.minor.release
+ # current.release.sprints <- GetReleaseSprints(current.minor.release)
 }
+
+release.summary.df <- data.frame(RELEASE_ITERATION_ID=current.release$id, RELEASE_NAME=current.release$name, SPRINT_ITERATION_ID=current.release$children[[1]]$id, SPRINT_NAME=current.release$children[[1]]$name, SPRINT=c(1:nrow(current.release$children[[1]])), START_DATE=as.Date(current.release$children[[1]]$attributes$startDate), END_DATE=as.Date(current.release$children[[1]]$attributes$finishDate))
+
+#CURRENT_SPRINT <- 2
+today <- format(Sys.Date())
+for(i in 1 : nrow(release.summary.df)) {
+  if(release.summary.df$START_DATE[i] <= today && today <= release.summary.df$END_DATE[i])
+    CURRENT_SPRINT <<- release.summary.df$SPRINT[i]
+}
+release.summary.df <- subset(release.summary.df, SPRINT < CURRENT_SPRINT)
+
+iteration.ids <- paste(c(current.release$id,as.character(release.summary.df$SPRINT_ITERATION_ID)), collapse=",")
+work.item.ids <- GetReleaseWorkItemIds(iteration.ids)
+#work.item.ids$workItems <- head(work.item.ids$workItems, 199)
+
+
+work.item.df <- GetReleaseWorkItems(work.item.ids$workItems$id)
+
+work.item.df$System.CreatedDate <- format(as.Date(work.item.df$System.CreatedDate), "%d/%m/%Y")
+work.item.df$Microsoft.VSTS.Common.ClosedDate <- format(as.Date(work.item.df$Microsoft.VSTS.Common.ClosedDate), "%d/%m/%Y")
+
+# Add Velocity
+release.summary.df <- inner_join(release.summary.df, rename(work.item.df %>% group_by(System.IterationId) %>% summarise(VELOCITY=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE)), SPRINT_ITERATION_ID=System.IterationId), by="SPRINT_ITERATION_ID")
 
 ###Total work done measured at the END of each sprint
-v$COMPLETED_RELEASE_POINTS[1]=v$VELOCITY[1]
+release.summary.df$COMPLETED_RELEASE_POINTS <- cumsum(release.summary.df$VELOCITY)
 
-for (i in 2:(nrow(v))) {
-  if(v$RELEASE_NAME[i-1]==v$RELEASE_NAME[i] & !is.na(v$RELEASE_NAME[i]) & !is.na(v$RELEASE_NAME[i-1]))
-    v$COMPLETED_RELEASE_POINTS[i] = v$COMPLETED_RELEASE_POINTS[i-1] + v$VELOCITY[i]
-  else
-    v$COMPLETED_RELEASE_POINTS[i] = v$VELOCITY[i]
-}
-cat(file=stderr(),"nrow:",nrow(v),"\n")
-if(nrow(v)>4){
-  v<-mutate(v,VELOCITY_SMA_5=SMA(v$VELOCITY, 5))
-  
-  
-  v<-mutate(v,VELOCITY_WMA_5=WMA(v$VELOCITY, 5))
+###Moving average calculations
+if(nrow(release.summary.df)>4){
+  release.summary.df$VELOCITY_SMA_5 <- SMA(release.summary.df$VELOCITY, 5)
+  release.summary.df$VELOCITY_WMA_5 <- WMA(release.summary.df$VELOCITY, 5)
 } else {
-  v<-mutate(v,VELOCITY_SMA_5=SMA(v$VELOCITY, nrow(v)-1))
-  
-  
-  v<-mutate(v,VELOCITY_WMA_5=WMA(v$VELOCITY, nrow(v)-1))
+  release.summary.df$VELOCITY_SMA_5 <- SMA(release.summary.df$VELOCITY, nrow(release.summary.df)-1)
+  release.summary.df$VELOCITY_WMA_5 <- WMA(release.summary.df$VELOCITY, nrow(release.summary.df)-1)
 }
 
+###Defects summary
+release.summary.df <- inner_join(release.summary.df, 
+                                 rename(
+                                   subset(work.item.df, System.WorkItemType=="Bug") 
+                                   %>% group_by(System.IterationId) 
+                                   %>% summarise(DEFECTS_COMPLETED_COUNT=n(),
+                                                 DEFECTS_COMPLETED_POINTS=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE))
+                                   , SPRINT_ITERATION_ID=System.IterationId), 
+                                 by="SPRINT_ITERATION_ID")
+
+###PBI summary
+release.summary.df <- inner_join(release.summary.df, 
+                                 rename(
+                                   subset(work.item.df, System.WorkItemType=="Product Backlog Item") 
+                                   %>% group_by(System.IterationId) 
+                                   %>% summarise(PBIS_COMPLETED_COUNT=n(),
+                                                 PBIS_COMPLETED_POINTS=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE))
+                                   , SPRINT_ITERATION_ID=System.IterationId), 
+                                 by="SPRINT_ITERATION_ID")
 
 
-###Hacky date dataframe since the date type won't persist if you write directly to v
-START_DATE <- as.Date(FIRST_DAY_OF_FIRST_SPRINT)
-END_DATE <- START_DATE+13
-dates<-data.frame(START_DATE=START_DATE,END_DATE=END_DATE)
 
-
-for (i in 1:(nrow(v)-1)) {
-  START_DATE = START_DATE+14
-  END_DATE = END_DATE+14
-  dates<-bind_rows(dates,data.frame(START_DATE=START_DATE,END_DATE=END_DATE))
-}
-
-v <- bind_cols(v,dates)
-
-v$TEAM_NAME <- TEAM_NAME
-
-
-defects <- subset(d,Work.Item.Type=="Bug")
-defects <- mutate(defects, COUNT=1)
-defects_d <- setNames(aggregate(defects$Effort, by=list(SPRINT=defects$SPRINT), FUN=sum, na.rm=TRUE), c("SPRINT","DEFECTS_COMPLETED_POINTS"))
-defects_c <- setNames(aggregate(defects$COUNT, by=list(SPRINT=defects$SPRINT), FUN=sum, na.rm=TRUE), c("SPRINT","DEFECTS_COMPLETED_COUNT"))
-v<-full_join(v,defects_d,by="SPRINT")
-v<-full_join(v,defects_c,by="SPRINT")
-
-pbis <- subset(d,Work.Item.Type=="Product Backlog Item")
-pbis <- mutate(pbis, COUNT=1)
-pbis_d <- setNames(aggregate(pbis$Effort, by=list(SPRINT=pbis$SPRINT), FUN=sum, na.rm=TRUE), c("SPRINT","PBIS_COMPLETED_POINTS"))
-pbis_c <- setNames(aggregate(pbis$COUNT, by=list(SPRINT=pbis$SPRINT), FUN=sum, na.rm=TRUE), c("SPRINT","PBIS_COMPLETED_COUNT"))
-v<-full_join(v,pbis_d,by="SPRINT")
-v<-full_join(v,pbis_c,by="SPRINT")
-
-b<-data.frame(DEFECTS_CREATED_COUNT=integer(0),DEFECTS_CREATED_POINTS=integer(0),PBIS_CREATED_COUNT=integer(0),PBIS_CREATED_POINTS=integer(0))
-for (i in 1:dim(v)[1]) {
-  a<-subset(defects, CREATED_DATE>= v$START_DATE[i] & CREATED_DATE<= v$END_DATE[i])
-  c<-subset(pbis, CREATED_DATE>= v$START_DATE[i] & CREATED_DATE<= v$END_DATE[i])
-  
-  b<-bind_rows(b,data.frame(DEFECTS_CREATED_COUNT=dim(a)[1],DEFECTS_CREATED_POINTS=sum(a$Effort, na.rm = TRUE), PBIS_CREATED_COUNT=dim(c)[1], PBIS_CREATED_POINTS=sum(c$Effort, na.rm = TRUE)))
-}
-
-v <- bind_cols(v,b)
 
 INPUT_DATA$TOTAL_RELEASE_POINTS = rowSums(cbind(INPUT_DATA$TOTAL_RELEASE_PBI_POINTS, INPUT_DATA$TOTAL_RELEASE_DEFECT_POINTS, INPUT_DATA$TOTAL_RELEASE_WORKORDER_POINTS), na.rm=TRUE)
-v<-full_join(v,INPUT_DATA,by="SPRINT")
-
-v<-subset(v, SPRINT<CURRENT_SPRINT)
-
-
-#v<-v[,c("TEAM_NAME","RELEASE_NAME","SPRINT","SPRINT_INDEX","START_DATE","END_DATE","VELOCITY","VELOCITY_SMA_5","VELOCITY_WMA_5","COMPLETED_RELEASE_POINTS", "DEFECTS_COMPLETED_COUNT","DEFECTS_COMPLETED_POINTS","DEFECTS_CREATED_COUNT","DEFECTS_CREATED_POINTS","PBIS_COMPLETED_COUNT","PBIS_COMPLETED_POINTS","PBIS_CREATED_COUNT","PBIS_CREATED_POINTS")]
+release.summary.df <- inner_join(release.summary.df, INPUT_DATA, by="SPRINT")

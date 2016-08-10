@@ -1,7 +1,3 @@
-source("TfsApiRequestHandler.R")
-source("TfsCollectionProjectTeam.R")
-
-
 GetCurrentRelease <- function() {
   # Computes the current release based on today's date.
   #
@@ -9,21 +5,49 @@ GetCurrentRelease <- function() {
   #   None
   #
   # Returns:
-  #   The current release as a list.
-  releases <- TfsApiGet("/tfs/FinancialReportingCollection/FinancialReportingProject/_apis/wit/classificationNodes/iterations?$depth=1")
-  length(releases$children)
+  #   current.release: The current release as a list.
+  if(tfs.collection == "" || tfs.project == "")
+    stop("TFS Collection or Project is not defined", call. = FALSE)
+  url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/classificationNodes/iterations?$depth=3",sep="")
+  cat("Request URL:",url,"\n")
+  releases <- TfsApiGet(url)
   today <- format(Sys.Date())
+  
   for (i in 1:nrow(releases$children)){
     child <- releases$children[i, ]
     if (!is.na(child$attributes$startDate) || !is.na(child$attributes$finishDate)) {
+      cat("Release:",child$name,", Start:",child$attributes$startDate,", Finish:",child$attributes$finishDate,"\n")
       if (today > child$attributes$startDate && today < child$attributes$finishDate)
-        current.release <- child
+        current.major.release <<- child
     } else {
       cat("Release:", child$name, "is missing start or finish dates.\n")
     }
   }
-  cat("Current Release:",current.release$name,"\n")
-  return(current.release)
+  if(!exists("current.major.release"))
+    stop("Today's date does not fall between any release start and end dates")
+  
+  cat("Current Major Release:",current.major.release$name,"\n")
+  
+  if(is.element('TRUE',current.major.release$children[[1]]$hasChildren)) {
+    for(i in 1:nrow(current.major.release$children[[1]])) {
+      grandchild <- current.major.release$children[[1]][i,]
+      if(grandchild$hasChildren) {
+        if (!is.na(grandchild$attributes$startDate) || !is.na(grandchild$attributes$finishDate)) {
+          cat("Release:",grandchild$name,", Start:",grandchild$attributes$startDate,", Finish:",grandchild$attributes$finishDate,"\n")
+          if (today > grandchild$attributes$startDate && today < grandchild$attributes$finishDate) {
+            current.minor.release <<- grandchild
+            cat("Current Minor Release:",current.minor.release$name,"\n")
+          }
+        } else {
+          cat("Release:", grandchild$name, "is missing start or finish dates.\n")
+        }
+      }
+    }
+  } else {
+    cat("No minor releases to define \n")
+    current.minor.release <- NULL
+  }
+  return(list(current.minor.release=current.minor.release,current.major.release=current.major.release))
 }
 
 
@@ -34,55 +58,59 @@ GetReleaseSprints <- function(release) {
   #   release: Release list.
   #
   # Returns:
-  #   sprints: List of children sprints in the release.
-  url <- paste("/tfs/FinancialReportingCollection/FinancialReportingProject/_apis/wit/classificationNodes/iterations/",URLencode(release$name),"?$depth=1", sep="")
+  #   sprints$children: List of child sprints in the release.
+  if(tfs.collection == "" || tfs.project == "")
+    stop("TFS Collection or Project is not defined", call. = FALSE)
+  url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/classificationNodes/iterations/",URLencode(release$name),"?$depth=1", sep="")
   cat("Request URL:", url, "\n")
   sprints <- TfsApiGet(url)
   return(sprints$children)
 }
 
-CreateReleaseSummaryTable <- function() {
-  current.release <- GetCurrentRelease()
-  current.release
-  sprints <- GetReleaseSprints(current.release)
-  release.table <- data.frame(RELEASE_ITERATION_ID=current.release$id, RELEASE_NAME=current.release$name, SPRINT_ITERATION_ID=sprints$id, SPRINT_NAME=sprints$name, SPRINT=c(1:length(sprints)), START_DATE=as.Date(sprints$attributes$startDate), END_DATE=as.Date(sprints$attributes$finishDate))
-  return(release.table)
-}
-current.release <- GetCurrentRelease()
-release.summary <- CreateReleaseSummaryTable()
 
-GetReleaseWorkItems <- function(iteration.ids) {
+GetReleaseWorkItemIds <- function(iteration.ids) {
   #Returns list of work item IDs.
   query <- paste("Select [System.Id] 
                  From WorkItems 
                  Where [System.WorkItemType] in ('Product Backlog Item', 'Bug', 'Work Order') 
                  AND [System.IterationId] in (",iteration.ids,") 
                  AND [System.State] <> 'Removed'")
-  
-  work.items<-TfsApiPost("/tfs/FinancialReportingCollection/FinancialReportingProject/_apis/wit/wiql?api-version=1.0",query)
+  url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/wiql?api-version=1.0",sep="")
+  work.items<-TfsApiPost(url,query)
   return(work.items)
 }
 
-iteration.ids <- paste(c(current.release$id,as.character(release.summary$SPRINT_ITERATION_ID)), collapse=",")
-work.items<-GetReleaseWorkItems(iteration.ids)
-work.item.list <- paste(as.character(work.items$workItems$id), collapse=",")
-return.fields <- 'System.Id, 
-                  System.Title, 
-                  System.WorkItemType, 
-                  System.IterationPath, 
-                  System.IterationId, 
-                  System.State,
-                  System.CreatedDate,
-                  Microsoft.VSTS.Scheduling.Effort,
-                  Microsoft.VSTS.Common.Severity,
-                  TR.Elite.BugType,
-                  Microsoft.VSTS.Common.ClosedDate,
-                  System.AreaPath'
-url <- paste("/tfs/FinancialReportingCollection/_apis/wit/workitems?ids=",work.item.list,"&fields=",gsub("[\n ]","",return.fields),"&api-version=1.0",sep="")
-import.table <- TfsApiGet(url)
+GetReleaseWorkItems <- function(work.item.id.list) {
+  remainder <- work.item.id.list
+  
+  while(length(remainder)>0) {
+    w <- head(remainder, 200)
+    remainder <- remainder[-c(1:200)]
 
+    list <- paste(as.character(w), collapse=",")
+    return.fields <- 'System.Id, 
+                    System.Title, 
+                    System.WorkItemType, 
+                    System.IterationPath, 
+                    System.IterationId, 
+                    System.State,
+                    System.CreatedDate,
+                    Microsoft.VSTS.Scheduling.Effort,
+                    Microsoft.VSTS.Common.Severity,
+                    TR.Elite.BugType,
+                    Microsoft.VSTS.Common.ClosedDate,
+                    System.AreaPath'
+    url <- paste("/tfs/",tfs.collection,"/_apis/wit/workitems?ids=",list,"&fields=",gsub("[\n ]","",return.fields),"&api-version=1.0",sep="")
+    if(!exists("work.items")) {
+      work.items <-  TfsApiGet(url)$value$fields
+    } else {
+      work.items <- full_join(work.items, TfsApiGet(url)$value$fields)
+    }
+    
+  }
+  return(work.items)
+}
 
-release.summary
 
 #TfsApiGet("/tfs/FinancialReportingCollection/FinancialReportingProject/_apis/wit/queries/Shared%20Queries/2.1%20All%20Work%20Items?$expand=wiql")
 
