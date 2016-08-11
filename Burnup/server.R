@@ -54,13 +54,5 @@ shinyServer(function(input, output) {
       plotVelocityTimeSeries(last20$SPRINT_INDEX, last20$VELOCITY, last20$PLANNED_SPRINT_VELOCITY, last20$VELOCITY_SMA_5)
     })
     output$vtable <- renderDataTable(release.summary.df, options=list(scrollX=TRUE))
-    # output$team <- renderMenu({
-    #  # cat(file=stderr(),"Responses:",responses$teamname)
-    #   teams<-apply(responses, 1, function(row) {
-    #     cat(file=stderr(),"Responxses:",row[["teamname"]],"\n")
-    #     menuItem(row[["teamname"]], tabName = row[["teamname"]], icon = icon("dashboard"))
-    #   })
-    #   sidebarMenu(.list=teams)
-    # })
   })
 })

@@ -28,7 +28,8 @@ GetTfsTeams <- function(tfs.project) {
 
 SetTfsTeam <- function() {
  # tfs.team <<- 'FinancialReporting Team'
-  tfs.team <<- 'VisualDesignerPrototypeTeam'
+ # tfs.team <<- 'VisualDesignerPrototypeTeam'
+  tfs.team <<- 'BackEndTeam'
 }
 
 GetDefaultTeamAreaPath <- function() {

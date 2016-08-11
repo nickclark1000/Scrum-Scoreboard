@@ -74,7 +74,7 @@ GetReleaseWorkItemIds <- function(iteration.ids) {
                  From WorkItems 
                  Where [System.WorkItemType] in ('Product Backlog Item', 'Bug', 'Work Order') 
                  AND [System.IterationId] in (",iteration.ids,")
-                 AND [System.AreaPath] under '",default.area.path,"'
+                 AND [System.AreaPath] under '",team.default.area.path,"'
                  AND [System.State] <> 'Removed'",sep="")
   cat("Request Query:", query, "\n")
   url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/wiql?api-version=1.0",sep="")
