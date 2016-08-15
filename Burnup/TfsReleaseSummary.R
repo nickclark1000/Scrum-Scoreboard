@@ -9,7 +9,6 @@ GetCurrentRelease <- function() {
   if(tfs.collection == "" || tfs.project == "")
     stop("TFS Collection or Project is not defined", call. = FALSE)
   url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/classificationNodes/iterations?$depth=3",sep="")
-  cat("Request URL:",url,"\n")
   releases <- TfsApiGet(url)
   today <- format(Sys.Date())
   
@@ -17,8 +16,10 @@ GetCurrentRelease <- function() {
     child <- releases$children[i, ]
     if (!is.na(child$attributes$startDate) || !is.na(child$attributes$finishDate)) {
       cat("Release:",child$name,", Start:",child$attributes$startDate,", Finish:",child$attributes$finishDate,"\n")
-      if (today > child$attributes$startDate && today < child$attributes$finishDate)
+      if (today > child$attributes$startDate && today < child$attributes$finishDate) {
         current.major.release <<- child
+        target.release.date <<- child$attributes$finishDate
+      }
     } else {
       cat("Release:", child$name, "is missing start or finish dates.\n")
     }
@@ -36,6 +37,7 @@ GetCurrentRelease <- function() {
           cat("Release:",grandchild$name,", Start:",grandchild$attributes$startDate,", Finish:",grandchild$attributes$finishDate,"\n")
           if (today > grandchild$attributes$startDate && today < grandchild$attributes$finishDate) {
             current.minor.release <<- grandchild
+            target.release.date <<- grandchild$attributes$finishDate
             cat("Current Minor Release:",current.minor.release$name,"\n")
           }
         } else {
@@ -62,27 +64,27 @@ GetReleaseSprints <- function(release) {
   if(tfs.collection == "" || tfs.project == "")
     stop("TFS Collection or Project is not defined", call. = FALSE)
   url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/classificationNodes/iterations/",URLencode(release$name),"?$depth=1", sep="")
-  cat("Request URL:", url, "\n")
   sprints <- TfsApiGet(url)
   return(sprints$children)
 }
 
 
-GetReleaseWorkItemIds <- function(iteration.ids) {
+GetReleaseWorkItemIds <- function(iteration.ids, date = format(Sys.Date())) {
   #Returns list of work item IDs.
   query <- paste("Select [System.Id] 
                  From WorkItems 
                  Where [System.WorkItemType] in ('Product Backlog Item', 'Bug', 'Work Order') 
-                 AND [System.IterationId] in (",iteration.ids,")
-                 AND [System.AreaPath] under '",team.default.area.path,"'
-                 AND [System.State] <> 'Removed'",sep="")
+                 AND [System.IterationId] in (", iteration.ids,")
+                 AND [System.AreaPath] under '", team.default.area.path,"'
+                 AND [System.State] <> 'Removed'
+                 ASOF '", date, "'", sep="")
   cat("Request Query:", query, "\n")
   url <- paste("/tfs/",tfs.collection,"/",tfs.project,"/_apis/wit/wiql?api-version=1.0",sep="")
   work.items<-TfsApiPost(url,query)
   return(work.items)
 }
 
-GetReleaseWorkItems <- function(work.item.id.list) {
+GetReleaseWorkItems <- function(work.item.id.list, date = format(Sys.Date())) {
   remainder <- work.item.id.list
   
   while(length(remainder)>0) {
@@ -102,7 +104,7 @@ GetReleaseWorkItems <- function(work.item.id.list) {
                     TR.Elite.BugType,
                     Microsoft.VSTS.Common.ClosedDate,
                     System.AreaPath'
-    url <- paste("/tfs/",tfs.collection,"/_apis/wit/workitems?ids=",list,"&fields=",gsub("[\n ]","",return.fields),"&api-version=1.0",sep="")
+    url <- paste("/tfs/",tfs.collection,"/_apis/wit/workitems?ids=",list,"&asOf=",date,"&fields=",gsub("[\n ]","",return.fields),"&api-version=1.0",sep="")
     if(!exists("work.items")) {
       work.items <-  TfsApiGet(url)$value$fields
     } else {
@@ -113,6 +115,16 @@ GetReleaseWorkItems <- function(work.item.id.list) {
   return(work.items)
 }
 
+GetBacklogSizeOverTime <- function(iteration.ids, dates) {
+  cat("Dates:", dates)
+  backlog.size.over.time <- data.frame(TOTAL_RELEASE_POINTS = double(), AS_OF = character())
+  for(i in 1:length(dates)) {
+    work.item.ids <- GetReleaseWorkItemIds(iteration.ids, dates[i])
+    work.item.df <- GetReleaseWorkItems(work.item.ids$workItems$id, dates[i])
+    backlog.size.as.of <- data.frame(TOTAL_RELEASE_POINTS = sum(work.item.df$Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE), AS_OF = dates[i])
+    backlog.size.over.time <- bind_rows(backlog.size.over.time, backlog.size.as.of)
+  }
 
-#TfsApiGet("/tfs/FinancialReportingCollection/FinancialReportingProject/_apis/wit/queries/Shared%20Queries/2.1%20All%20Work%20Items?$expand=wiql")
-
+  return(backlog.size.over.time)
+  
+}

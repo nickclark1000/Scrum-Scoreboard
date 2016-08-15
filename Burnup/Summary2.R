@@ -21,27 +21,35 @@ if(is.null(current.minor.release)) {
   current.release <- current.release$current.minor.release
 }
 
-release.summary.df <- data.frame(RELEASE_ITERATION_ID=current.release$id, RELEASE_NAME=current.release$name, SPRINT_ITERATION_ID=current.release$children[[1]]$id, SPRINT_NAME=current.release$children[[1]]$name, SPRINT_INDEX=c(1:nrow(current.release$children[[1]])), START_DATE=as.Date(current.release$children[[1]]$attributes$startDate), END_DATE=as.Date(current.release$children[[1]]$attributes$finishDate))
+release.summary.df <- data.frame(TEAM = tfs.team, 
+                                 RELEASE_ITERATION_ID = current.release$id, 
+                                 RELEASE_NAME = current.release$name, 
+                                 SPRINT_ITERATION_ID = current.release$children[[1]]$id, 
+                                 SPRINT_NAME = current.release$children[[1]]$name, 
+                                 SPRINT_INDEX = c(1:nrow(current.release$children[[1]])), 
+                                 START_DATE = current.release$children[[1]]$attributes$startDate, 
+                                 END_DATE = current.release$children[[1]]$attributes$finishDate)
 
 today <- format(Sys.Date())
 for(i in 1 : nrow(release.summary.df)) {
-  if(release.summary.df$START_DATE[i] <= today && today <= release.summary.df$END_DATE[i])
+  if(as.Date(release.summary.df$START_DATE[i]) <= today && today <= as.Date(release.summary.df$END_DATE[i]))
     CURRENT_SPRINT_INDEX <<- release.summary.df$SPRINT_INDEX[i]
 }
 release.summary.df <- subset(release.summary.df, SPRINT_INDEX < CURRENT_SPRINT_INDEX)
 
 iteration.ids <- paste(c(current.release$id,as.character(release.summary.df$SPRINT_ITERATION_ID)), collapse=",")
 work.item.ids <- GetReleaseWorkItemIds(iteration.ids)
-#work.item.ids$workItems <- head(work.item.ids$workItems, 199)
 
 
 work.item.df <- GetReleaseWorkItems(work.item.ids$workItems$id)
 
-work.item.df$System.CreatedDate <- format(as.Date(work.item.df$System.CreatedDate), "%d/%m/%Y")
-work.item.df$Microsoft.VSTS.Common.ClosedDate <- format(as.Date(work.item.df$Microsoft.VSTS.Common.ClosedDate), "%d/%m/%Y")
-
 # Add Velocity
-release.summary.df <- inner_join(release.summary.df, rename(work.item.df %>% group_by(System.IterationId) %>% summarise(VELOCITY=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE)), SPRINT_ITERATION_ID=System.IterationId), by="SPRINT_ITERATION_ID")
+release.summary.df <- inner_join(release.summary.df, 
+                                 rename(work.item.df %>% 
+                                        group_by(System.IterationId) %>% 
+                                        summarise(VELOCITY=sum(Microsoft.VSTS.Scheduling.Effort, na.rm=TRUE)), 
+                                        SPRINT_ITERATION_ID=System.IterationId), 
+                                 by="SPRINT_ITERATION_ID")
 
 ###Total work done measured at the END of each sprint
 release.summary.df$COMPLETED_RELEASE_POINTS <- cumsum(release.summary.df$VELOCITY)
@@ -75,6 +83,6 @@ release.summary.df <- left_join(release.summary.df,
                                    , SPRINT_ITERATION_ID=System.IterationId), 
                                  by="SPRINT_ITERATION_ID")
 
+backlog.size <- GetBacklogSizeOverTime(iteration.ids, release.summary.df$END_DATE)
 
-INPUT_DATA$TOTAL_RELEASE_POINTS = rowSums(cbind(INPUT_DATA$TOTAL_RELEASE_PBI_POINTS, INPUT_DATA$TOTAL_RELEASE_DEFECT_POINTS, INPUT_DATA$TOTAL_RELEASE_WORKORDER_POINTS), na.rm=TRUE)
-release.summary.df <- inner_join(release.summary.df, INPUT_DATA, by="SPRINT_INDEX")
+release.summary.df <- left_join(release.summary.df, backlog.size, by = c("END_DATE" = "AS_OF"))
