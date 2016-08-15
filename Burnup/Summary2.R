@@ -3,8 +3,8 @@ library(dplyr)
 ###load TTR for calculating moving averages
 library(TTR)
 
-source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsApiRequestHandler.R")
-source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsCollectionProjectTeam.R")
+#source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsApiRequestHandler.R")
+#source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsCollectionProjectTeam.R")
 source("C:/Users/u6033371/Documents/Agile Resources/AgileData/Burnup/TfsReleaseSummary.R")
 
 SetTfsCollection()

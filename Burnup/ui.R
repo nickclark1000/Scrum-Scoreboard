@@ -8,9 +8,11 @@ library(tidyr)
 dashboardPage(
   dashboardHeader(title = "Scrum Scoreboard"),
   dashboardSidebar(
-    # textInput("collection", "TFS Collection"),
-    # actionButton("get.projects", "Get Projects"),
-    # uiOutput("projects"),
+    selectInput("collection", "TFS Collection",
+                c("FinancialReportingCollection", "DTSCollection")
+    ),
+    uiOutput("projects"),
+    uiOutput("teams"),
     actionButton("run", "Go")
   ),
   dashboardBody(
