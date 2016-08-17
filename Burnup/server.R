@@ -51,8 +51,10 @@ shinyServer(function(input, output) {
   observeEvent(input$run, {
     
     saveData(formData())
+    withProgress(message = 'Making plot', value = 0.5, {
+      source("Summary2.R", local=TRUE)
+    })
     
-    source("Summary2.R", local=TRUE)
     
     output$BURNUP_CHART <- renderPlotly({
       source("Projections.data.R", local=TRUE)

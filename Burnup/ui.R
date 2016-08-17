@@ -13,7 +13,11 @@ dashboardPage(
     ),
     uiOutput("projects"),
     uiOutput("teams"),
-    actionButton("run", "Go")
+    tags$div(
+      style = "padding-left: 12px",
+      actionButton("run", "Go")
+    )
+    
   ),
   dashboardBody(
     fluidRow(
@@ -33,6 +37,18 @@ dashboardPage(
     ),
     fluidRow(
       box(dataTableOutput('vtable'),width=12)
+    )
+  ),
+  tags$head(
+    tags$style(
+      HTML(".shiny-progress .bar {
+              background-color: #FF0000;
+              opacity = 0.8;
+           }
+           .shiny-progress .progress {
+              height:7px;
+           }"
+      )
     )
   )
 )
