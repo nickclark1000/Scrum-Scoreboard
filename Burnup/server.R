@@ -47,7 +47,7 @@ shinyServer(function(input, output) {
   observeEvent(input$run, {
     saveData(formData())
     withProgress(message = 'Making plot', value = 0.5, {
-      source("Summary2.R", local=TRUE)
+      source("release_summary.R", local=TRUE)
     })
     
     
@@ -58,7 +58,7 @@ shinyServer(function(input, output) {
     })
     
     output$velocity_chart <- renderPlotly({
-      source("Velocity.plot.R", local=TRUE)
+      source("velocity_plot.R", local=TRUE)
       plotVelocityTimeSeries(release_summary$SPRINT_INDEX, release_summary$VELOCITY, release_summary$VELOCITY_SMA_5)
     })
     output$vtable <- renderDataTable(release_summary, options=list(scrollX=TRUE))
