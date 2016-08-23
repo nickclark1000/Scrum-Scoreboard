@@ -21,10 +21,10 @@ dashboardPage(
   ),
   dashboardBody(
     fluidRow(
-      box(plotlyOutput("BURNUP_CHART"),width=12)
+      box(plotlyOutput("burnup_chart"),width=12)
     ),
     fluidRow(
-      box(plotlyOutput("VELOCITY_CHART"),width=12)
+      box(plotlyOutput("velocity_chart"),width=12)
       # bsModal("myModal",
       #     "New Team",
       #     "tabBut",

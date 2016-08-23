@@ -1,5 +1,6 @@
 cat(file=stderr(),"Start server",format(Sys.time(), "%a %b %d %Y %H:%M:%S "),"\n")
 library(shiny)
+library(rtfs)
 responses<-NULL
 saveData <- function(data) {
   data <- as.data.frame(t(data))
@@ -26,46 +27,40 @@ shinyServer(function(input, output) {
     data
   })
   
-  source("TfsApiRequestHandler.R")
-  source("TfsCollectionProjectTeam.R")
-  
   output$projects <- renderUI({
-    
-    tfs.projects <- GetTfsProjects(input$collection)
-    selectInput("project", "TFS Project", as.list(tfs.projects$value$name))
+    tfs_projects <- rtfs::get_projects(input$collection)
+    selectInput("project", "TFS Project", as.list(tfs_projects$content$value$name))
   })
   output$teams <- renderUI({
-    
-    tfs.teams <- GetTfsTeams(input$collection, input$project)
-    selectInput("team", "TFS Team", as.list(tfs.teams$value$name))
+    tfs_teams <- rtfs::get_teams(input$collection, input$project)
+    selectInput("team", "TFS Team", as.list(tfs_teams$content$value$name))
   })
   observe({
-    tfs.collection <<- input$collection
-    tfs.project <<- input$project
-    tfs.team <<- input$team
-    cat("team",tfs.team," \n")
-    cat("collection",tfs.collection," \n")
-    cat("project",tfs.project," \n")
+    tfs_collection <<- input$collection
+    tfs_project <<- input$project
+    tfs_team <<- input$team
+    cat("team",tfs_team," \n")
+    cat("collection",tfs_collection," \n")
+    cat("project",tfs_project," \n")
   })
 
   observeEvent(input$run, {
-    
     saveData(formData())
     withProgress(message = 'Making plot', value = 0.5, {
       source("Summary2.R", local=TRUE)
     })
     
     
-    output$BURNUP_CHART <- renderPlotly({
-      source("Projections.data.R", local=TRUE)
-      source("Burnup.plot.R", local=TRUE)
-      plotBurnupChart(data.frame(SPRINT_INDEX = as.factor(w$SPRINT_INDEX), END_DATE = w$END_DATE, COMPLETED = w$COMPLETED_RELEASE_POINTS, TOTAL = w$TOTAL_RELEASE_POINTS), NO_CHANGE_LINE, target.release.date, AVG_5_LM)
+    output$burnup_chart <- renderPlotly({
+      source("burnup_projections.R", local=TRUE)
+      source("burnup_plot.R", local=TRUE)
+      plotBurnupChart(data.frame(SPRINT_INDEX = as.factor(w$SPRINT_INDEX), END_DATE = w$END_DATE, COMPLETED = w$COMPLETED_RELEASE_POINTS, TOTAL = w$TOTAL_RELEASE_POINTS), NO_CHANGE_LINE, target_release_date, AVG_5_LM)
     })
     
-    output$VELOCITY_CHART <- renderPlotly({
+    output$velocity_chart <- renderPlotly({
       source("Velocity.plot.R", local=TRUE)
-      plotVelocityTimeSeries(release.summary.df$SPRINT_INDEX, release.summary.df$VELOCITY, release.summary.df$VELOCITY_SMA_5)
+      plotVelocityTimeSeries(release_summary$SPRINT_INDEX, release_summary$VELOCITY, release_summary$VELOCITY_SMA_5)
     })
-    output$vtable <- renderDataTable(release.summary.df, options=list(scrollX=TRUE))
+    output$vtable <- renderDataTable(release_summary, options=list(scrollX=TRUE))
   })
 })
