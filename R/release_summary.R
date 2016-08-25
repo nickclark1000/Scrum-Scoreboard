@@ -26,7 +26,7 @@ for (i in 1:nrow(release_summary)) {
         today <= as.Date(release_summary$END_DATE[i])) 
         CURRENT_SPRINT_INDEX <<- release_summary$SPRINT_INDEX[i]
 }
-release_summary <- subset(release_summary, SPRINT_INDEX < CURRENT_SPRINT_INDEX)
+#release_summary <- subset(release_summary, SPRINT_INDEX < CURRENT_SPRINT_INDEX)
 
 iteration_ids <- paste(c(current_release$id, as.character(release_summary$SPRINT_ITERATION_ID)), 
     collapse = ",")
@@ -64,6 +64,17 @@ release_summary <- left_join(release_summary,
                                     SPRINT_ITERATION_ID = System.IterationId), 
                              by = "SPRINT_ITERATION_ID")
 
+defects <- subset(work_item_df, System.WorkItemType == "Bug")
+pbis <- subset(work_item_df, System.WorkItemType == "Product Backlog Item")
+b<-data.frame(DEFECTS_CREATED_COUNT=integer(0),DEFECTS_CREATED_POINTS=integer(0),PBIS_CREATED_COUNT=integer(0),PBIS_CREATED_POINTS=integer(0))
+for (i in 1:nrow(release_summary)) {
+  a<-subset(defects, defects$System.CreatedDate>= as.Date(release_summary$START_DATE[i]) & defects$System.CreatedDate<= as.Date(release_summary$END_DATE[i]))
+  c<-subset(pbis, pbis$System.CreatedDate>= as.Date(release_summary$START_DATE[i]) & pbis$System.CreatedDate<= as.Date(release_summary$END_DATE[i]))
+  
+  b<-bind_rows(b,data.frame(DEFECTS_CREATED_COUNT=nrow(a),DEFECTS_CREATED_POINTS=sum(a$Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE), PBIS_CREATED_COUNT=nrow(c), PBIS_CREATED_POINTS=sum(c$Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)))
+}
+
+release_summary <- bind_cols(release_summary, b)
 ### PBI summary
 release_summary <- left_join(release_summary, 
                              rename(subset(work_item_df, System.WorkItemType == "Product Backlog Item") %>% 
