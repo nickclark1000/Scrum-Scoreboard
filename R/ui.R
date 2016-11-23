@@ -9,7 +9,7 @@ dashboardPage(
   dashboardHeader(title = "Scrum Scoreboard"),
   dashboardSidebar(
     selectInput("collection", "TFS Collection",
-                c("FinancialReportingCollection", "DTSCollection")
+                c("FinancialReportingCollection", "DTSCollection", "CITSCollection")
     ),
     uiOutput("projects"),
     uiOutput("teams"),
