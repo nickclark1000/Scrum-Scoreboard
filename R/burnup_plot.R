@@ -23,6 +23,6 @@ plotBurnupChart <- function(release.summary, noChangeVector, target_release_date
     ##Velocity trend
     add_trace(x=c(LAST_SPRINT_END_DATE, max(BACKLOG5_VEL_XDATE, NC_VEL_XDATE)),y=c(LAST_SPRINT_END_DATE_UNIX * AVG_5_LM$coef[2] + AVG_5_LM$coef[1], max(BACKLOG5_VEL_XPOINTS,NC_LAST5AVG_INTERSECTION$y)), name = "Projected Velocity", line = list(dash ="dash", color = "green"), showlegend = TRUE) %>%
     
-    layout(title="Release Burn-up", yaxis = list(rangemode = "tozero"), xaxis = list(title = "Date", type = "date", tick0 = LAST_SPRINT_END_DATE_UNIX * 1000, dtick = 1210000000))
+    layout(title="Release Burn-up", yaxis = list(title = "Story Points", rangemode = "tozero"), xaxis = list(title = "Date", type = "date", tick0 = LAST_SPRINT_END_DATE_UNIX * 1000, dtick = 1210000000))
   
 }

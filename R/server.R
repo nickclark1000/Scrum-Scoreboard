@@ -59,7 +59,7 @@ shinyServer(function(input, output) {
     
     output$velocity_chart <- renderPlotly({
       source("velocity_plot.R", local=TRUE)
-      plotVelocityTimeSeries(release_summary$SPRINT_INDEX, release_summary$VELOCITY, release_summary$VELOCITY_SMA_5)
+      plotVelocityTimeSeries(release_summary$SPRINT_NAME, release_summary$VELOCITY, release_summary$PLANNED_VELOCITY, release_summary$VELOCITY_MA_5)
     })
     output$vtable <- renderDataTable(release_summary, options=list(scrollX=TRUE))
   })
