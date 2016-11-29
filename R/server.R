@@ -53,7 +53,7 @@ shinyServer(function(input, output) {
     output$burnup_chart <- renderPlotly({
       source("burnup_projections.R", local=TRUE)
       source("burnup_plot.R", local=TRUE)
-      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_POINTS, Total = release_summary$TOTAL_RELEASE_POINTS), target_release_date)
+      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_POINTS, Total = release_summary$TOTAL_RELEASE_POINTS), target_release_date, "Release Burnup", "Story Points")
     })
     
     output$velocity_chart <- renderPlotly({
