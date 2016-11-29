@@ -13,6 +13,11 @@ projectedDataPoints <- function(initialSprint, initialTotal, predictionModel, da
   return(dataFrame)
 }
 
+getLinearModel <- function(x1, x2, y1, y2){
+  df <- data.frame(x = c(x1, x2), 
+                   y = c(y1, y2))
+  return(lm(df$y ~ df$x))
+}
 
 ##########Determine intersection points
 # Linear model Intercept function
