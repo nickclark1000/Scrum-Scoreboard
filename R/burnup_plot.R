@@ -26,7 +26,7 @@ plotBurnupChart <- function(df, targetDate, chartTitle, yAxisTitle){
   last5Intersection <- lmIntx(totalLast5LM, completedLast5LM)
   
   
-  long_df <- df[,c("Date", "Completed", "Total")] %>% tidyr::gather(Type, Points, c(Completed, Total))
+  long_df <- df %>% tidyr::gather(Type, Points, c(Completed, Total))
   
   constantXDate <- as.Date(as.POSIXct(constantIntersection$x, origin = "1970-01-01"))
   last5XDate <- as.Date(as.POSIXct(last5Intersection$x, origin = "1970-01-01"))
