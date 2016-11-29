@@ -1,7 +1,5 @@
-plotBurnupChart <- function(release.summary, noChangeVector, target_release_date, completedForecast){
-  release_summary <- rename(release_summary, Completed = COMPLETED_RELEASE_POINTS)
-  release_summary <- rename(release_summary, Total = TOTAL_RELEASE_POINTS)
-  long_df <- release_summary[,c("SPRINT_INDEX", "END_DATE", "Completed", "Total")] %>% tidyr::gather(Type, Points, c(Completed, Total))
+plotBurnupChart <- function(df, targetDate){
+  long_df <- df[,c("Date", "Completed", "Total")] %>% tidyr::gather(Type, Points, c(Completed, Total))
   
   NC_VEL_XDATE <- as.Date(as.POSIXct(NC_LAST5AVG_INTERSECTION$x, origin="1970-01-01"))
   BACKLOG5_VEL_XDATE <- as.Date(as.POSIXct(BACKLOG5_LAST5AVG_INTERSECTION$x, origin="1970-01-01"))
@@ -9,9 +7,9 @@ plotBurnupChart <- function(release.summary, noChangeVector, target_release_date
   LAST_SPRINT_END_DATE_UNIX <- as.numeric(as.POSIXct(tail(release_summary$END_DATE, 1)))
   BACKLOG5_VEL_XPOINTS <- BACKLOG5_LAST5AVG_INTERSECTION$x*BACKLOG_AVG_5_LM$coef[2]+BACKLOG_AVG_5_LM$coef[1]
   
-  p<-plot_ly(data = long_df, x = as.Date(END_DATE), y=Points, color = Type, fill = 'tonexty') %>%
+  p<-plot_ly(data = long_df, x = as.Date(Date), y=Points, color = Type, fill = 'tonexty') %>%
     ##Target Release
-    add_trace(x = c(as.Date(target_release_date), as.Date(target_release_date)), y = c(0, max(Points)), mode = "lines", name = "Target Release", line = list(dash = "dash", color = "black")) %>%
+    add_trace(x = c(as.Date(targetDate), as.Date(targetDate)), y = c(0, max(Points)), mode = "lines", name = "Target Release", line = list(dash = "dash", color = "black")) %>%
     ##No Change Target
     add_trace(x = c(NC_VEL_XDATE, NC_VEL_XDATE), y = c(0, NC_LAST5AVG_INTERSECTION$y), mode = "lines", name = "No Change Target", line = list(dash = "dash", color = "purple"), showlegend = FALSE) %>%
     ##No Change horizontal

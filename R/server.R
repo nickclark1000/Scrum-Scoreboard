@@ -50,11 +50,10 @@ shinyServer(function(input, output) {
       source("release_summary.R", local=TRUE)
     })
     
-    
     output$burnup_chart <- renderPlotly({
       source("burnup_projections.R", local=TRUE)
       source("burnup_plot.R", local=TRUE)
-      plotBurnupChart(data.frame(SPRINT_INDEX = as.factor(w$SPRINT_INDEX), END_DATE = w$END_DATE, COMPLETED = w$COMPLETED_RELEASE_POINTS, TOTAL = w$TOTAL_RELEASE_POINTS), NO_CHANGE_LINE, target_release_date, AVG_5_LM)
+      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_POINTS, Total = release_summary$TOTAL_RELEASE_POINTS), target_release_date)
     })
     
     output$velocity_chart <- renderPlotly({
