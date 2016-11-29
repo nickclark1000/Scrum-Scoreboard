@@ -66,26 +66,34 @@ release_summary$COMPLETED_RELEASE_POINTS <- cumsum(release_summary$VELOCITY)
 ### Moving average calculations
 release_summary$VELOCITY_MA_5 <- velocity_moving_average(release_summary$VELOCITY)
 
+
+
+created <- data.frame(DEFECTS_CREATED_COUNT = integer(0),
+                DEFECTS_CREATED_POINTS = integer(0),
+                PBIS_CREATED_COUNT = integer(0),
+                PBIS_CREATED_POINTS = integer(0))
+
+for (i in 1:nrow(release_summary)){
+  createdThisSprint <- subset(work_item_df, work_item_df$System.CreatedDate >= as.Date(release_summary$START_DATE[i]) & work_item_df$System.CreatedDate <= as.Date(release_summary$END_DATE[i]))
+  bugsCreatedThisSprint <- subset(createdThisSprint, System.WorkItemType == "Bug")
+  pbisCreatedThisSprint <- subset(createdThisSprint, System.WorkItemType == "Product Backlog Item")
+  created <- bind_rows(created, data.frame(DEFECTS_CREATED_COUNT = nrow(bugsCreatedThisSprint),
+                               DEFECTS_CREATED_POINTS = sum(bugsCreatedThisSprint$Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE), 
+                               PBIS_CREATED_COUNT = nrow(pbisCreatedThisSprint), 
+                               PBIS_CREATED_POINTS = sum(pbisCreatedThisSprint$Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)))
+}
+
+release_summary <- bind_cols(release_summary, created)
+
 ### Defects summary
 release_summary <- left_join(release_summary, 
                              rename(subset(work_item_df, System.WorkItemType == "Bug") %>% 
-                                    group_by(System.IterationId) %>% 
-                                    summarise(DEFECTS_COMPLETED_COUNT = n(), 
-                                              DEFECTS_COMPLETED_POINTS = sum(Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)), 
+                                      group_by(System.IterationId) %>% 
+                                      summarise(DEFECTS_COMPLETED_COUNT = n(), 
+                                                DEFECTS_COMPLETED_POINTS = sum(Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)), 
                                     SPRINT_ITERATION_ID = System.IterationId), 
                              by = "SPRINT_ITERATION_ID")
 
-defects <- subset(work_item_df, System.WorkItemType == "Bug")
-pbis <- subset(work_item_df, System.WorkItemType == "Product Backlog Item")
-b<-data.frame(DEFECTS_CREATED_COUNT=integer(0),DEFECTS_CREATED_POINTS=integer(0),PBIS_CREATED_COUNT=integer(0),PBIS_CREATED_POINTS=integer(0))
-for (i in 1:nrow(release_summary)) {
-  a<-subset(defects, defects$System.CreatedDate>= as.Date(release_summary$START_DATE[i]) & defects$System.CreatedDate<= as.Date(release_summary$END_DATE[i]))
-  c<-subset(pbis, pbis$System.CreatedDate>= as.Date(release_summary$START_DATE[i]) & pbis$System.CreatedDate<= as.Date(release_summary$END_DATE[i]))
-  
-  b<-bind_rows(b,data.frame(DEFECTS_CREATED_COUNT=nrow(a),DEFECTS_CREATED_POINTS=sum(a$Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE), PBIS_CREATED_COUNT=nrow(c), PBIS_CREATED_POINTS=sum(c$Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)))
-}
-
-release_summary <- bind_cols(release_summary, b)
 ### PBI summary
 release_summary <- left_join(release_summary, 
                              rename(subset(work_item_df, System.WorkItemType == "Product Backlog Item") %>% 
@@ -95,9 +103,21 @@ release_summary <- left_join(release_summary,
                                     SPRINT_ITERATION_ID = System.IterationId), 
                              by = "SPRINT_ITERATION_ID")
 
+### Work Order summary
+release_summary <- left_join(release_summary, 
+                             rename(subset(work_item_df, System.WorkItemType == "Work Order") %>% 
+                                      group_by(System.IterationId) %>% 
+                                      summarise(WOS_COMPLETED_COUNT = n(), 
+                                                WOS_COMPLETED_POINTS = sum(Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)), 
+                                    SPRINT_ITERATION_ID = System.IterationId), 
+                             by = "SPRINT_ITERATION_ID")
+
 backlog_history <- rtfs::get_backlog_history(iteration_ids, release_summary$END_DATE)
 
 release_summary <- left_join(release_summary, backlog_history, by = c(END_DATE = "AS_OF"))
+
+release_summary$WORK_ITEMS_COMPLETED_COUNT <- rowSums(release_summary[, c("DEFECTS_COMPLETED_COUNT", "PBIS_COMPLETED_COUNT", "WOS_COMPLETED_COUNT")], na.rm = TRUE)
+release_summary$COMPLETED_RELEASE_COUNT <- cumsum(release_summary$WORK_ITEMS_COMPLETED_COUNT)
 
 #test_case_history <- rtfs::get_tc_automation_history(release_summary$END_DATE)
 #release_summary <- left_join(release_summary, test_case_history, by = c(END_DATE = "AS_OF"))

@@ -21,7 +21,10 @@ dashboardPage(
   ),
   dashboardBody(
     fluidRow(
-      box(plotlyOutput("burnup_chart"),width=12)
+      box(plotlyOutput("burnup_chart_points"),width=12)
+    ),
+    fluidRow(
+      box(plotlyOutput("burnup_chart_count"),width=12)
     ),
     fluidRow(
       box(plotlyOutput("velocity_chart"),width=12)
