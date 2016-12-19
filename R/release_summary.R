@@ -122,22 +122,4 @@ release_summary$COMPLETED_RELEASE_COUNT <- cumsum(release_summary$WORK_ITEMS_COM
 #test_case_history <- rtfs::get_tc_automation_history(release_summary$END_DATE)
 #release_summary <- left_join(release_summary, test_case_history, by = c(END_DATE = "AS_OF"))
 
-last_sprint_iteration_id <- tail(release_summary$SPRINT_ITERATION_ID, 1)
-last_sprint_start_date <- tail(release_summary$START_DATE, 1)
-last_sprint_end_date <- tail(release_summary$END_DATE, 1)
-
-days <- seq(from = as.Date(last_sprint_start_date), to = as.Date(last_sprint_end_date), by = 'days')
-sprint_history <- data.frame(COMPLETED_POINTS = double())
-for ( i in seq_along(days) )
-{
-  #add 1 day for midnight calculation
-  work_item_ids <- get_release_wi_ids(last_sprint_iteration_id, days[i]+1)$content
-  work_item_df <- get_release_wis(work_item_ids$workItems$id, days[i]+1)
-  done <- subset(work_item_df, System.State == 'Done' | System.State == 'Closed')
-  done_as_of <- data.frame(COMPLETED_POINTS = sum(done$Microsoft.VSTS.Scheduling.Effort, na.rm = T),
-                           TOTAL_POINTS = sum(work_item_df$Microsoft.VSTS.Scheduling.Effort, na.rm = T),
-                           COMPLETED_COUNT = nrow(done),
-                           TOTAL_COUNT = nrow(work_item_df),
-                           AS_OF = days[i])
-  sprint_history <- bind_rows(sprint_history, done_as_of)
-}
+sprint_history <- rtfs::get_sprint_history(tail(release_summary$SPRINT_ITERATION_ID, 1), tail(release_summary$START_DATE, 1), tail(release_summary$END_DATE, 1))
