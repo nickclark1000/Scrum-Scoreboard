@@ -52,12 +52,20 @@ shinyServer(function(input, output) {
     
     output$burnup_chart_points <- renderPlotly({
       source("burnup_plot.R", local=TRUE)
-      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_POINTS, Total = release_summary$TOTAL_RELEASE_POINTS), target_release_date, "Release Burnup", "Story Points")
+      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_POINTS, Total = release_summary$TOTAL_RELEASE_POINTS), target_release_date, "Release Burnup - Points", "Story Points")
     })
     
     output$burnup_chart_count <- renderPlotly({
       source("burnup_plot.R", local=TRUE)
-      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_COUNT, Total = release_summary$TOTAL_RELEASE_COUNT), target_release_date, "Release Burnup", "Work Item Count")
+      plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$COMPLETED_RELEASE_COUNT, Total = release_summary$TOTAL_RELEASE_COUNT), target_release_date, "Release Burnup - Count", "Work Item Count")
+    })
+    # output$autotest_burnup_chart <- renderPlotly({
+    #   source("burnup_plot.R", local=TRUE)
+    #   plotBurnupChart(data.frame(Date = release_summary$END_DATE, Completed = release_summary$TEST_CASES_AUTOMATED, Total = release_summary$TEST_CASES_TOTAL), target_release_date, "Automation Test Cases Burnup", "Test Case Count")
+    # })
+    output$sprint_chart <- renderPlotly({
+      source("sprint_plot.R", local=TRUE)
+      plotSprintChart(data.frame(Date = sprint_history$AS_OF, Completed = sprint_history$COMPLETED_POINTS, Total = sprint_history$TOTAL_POINTS), "Sprint Burnup", "Story Points")
     })
     
     output$velocity_chart <- renderPlotly({
@@ -65,5 +73,6 @@ shinyServer(function(input, output) {
       plotVelocityTimeSeries(release_summary$SPRINT_NAME, release_summary$VELOCITY, release_summary$PLANNED_VELOCITY, release_summary$VELOCITY_MA_5)
     })
     output$vtable <- renderDataTable(release_summary, options=list(scrollX=TRUE))
+    output$sprint_table <- renderDataTable(sprint_history, options=list(scrollX=TRUE))
   })
 })

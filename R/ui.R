@@ -21,13 +21,16 @@ dashboardPage(
   ),
   dashboardBody(
     fluidRow(
-      box(plotlyOutput("burnup_chart_points"),width=12)
+      box(plotlyOutput("burnup_chart_points"), width = 12)
     ),
     fluidRow(
-      box(plotlyOutput("burnup_chart_count"),width=12)
+      box(plotlyOutput("burnup_chart_count"), width  =12)
     ),
     fluidRow(
-      box(plotlyOutput("velocity_chart"),width=12)
+      box(plotlyOutput("sprint_chart"), width = 12)
+    ),
+    fluidRow(
+      box(plotlyOutput("velocity_chart"), width = 12)
       # bsModal("myModal",
       #     "New Team",
       #     "tabBut",
@@ -39,7 +42,10 @@ dashboardPage(
       #)
     ),
     fluidRow(
-      box(dataTableOutput('vtable'),width=12)
+      box(dataTableOutput('vtable'), width = 12)
+    ),
+    fluidRow(
+      box(dataTableOutput('sprint_table'), width = 12)
     )
   ),
   tags$head(
