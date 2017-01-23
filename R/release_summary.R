@@ -42,12 +42,13 @@ work_item_ids <- rtfs::get_release_wi_ids(iteration_ids)$content
 work_item_df <- rtfs::get_release_wis(work_item_ids$workItems$id)
 
 # Add Actual Velocity
-release_summary <- inner_join(release_summary, 
+release_summary <- left_join(release_summary, 
                                  rename(work_item_df %>% 
-                                 group_by(System.IterationId) %>% 
-                                 summarise(VELOCITY = sum(Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)), 
+                                    group_by(System.IterationId) %>% 
+                                    summarise(VELOCITY = sum(Microsoft.VSTS.Scheduling.Effort, na.rm = TRUE)),
                                  SPRINT_ITERATION_ID = System.IterationId), 
-                              by = "SPRINT_ITERATION_ID")
+                              by = "SPRINT_ITERATION_ID") %>%
+                    mutate_each(funs(replace(., which(is.na(.)), 0)))
 
 # Add Planned Velocity
 planned_velocity <- data.frame(PLANNED_VELOCITY = double(),
