@@ -30,48 +30,66 @@ plotBurnupChart <- function(df, targetDate, chartTitle, yAxisTitle){
   constantXDate <- as.Date(as.POSIXct(constantIntersection$x, origin = "1970-01-01"))
   last5XDate <- as.Date(as.POSIXct(last5Intersection$x, origin = "1970-01-01"))
   
-  plot_ly(data = long_df, x = as.Date(Date), y = Points, color = Type, fill = 'tonexty') %>%
-  layout(title = chartTitle, 
-         yaxis = list(title = yAxisTitle, rangemode = "tozero"), 
-         xaxis = list(title = "Date", type = "date", tick0 = lastDateUnix * 1000, dtick = 1210000000)) %>%
-  
-  ##Target Release  
-    add_trace(x = c(as.Date(targetDate), as.Date(targetDate)), 
-              y = c(0, max(Points)), 
-              mode = "lines", 
-              name = "Target Release", 
-              line = list(dash = "dash", color = "black")) %>%
-  ##No Change Target
-  add_trace(x = c(constantXDate, constantXDate), 
-            y = c(0, constantIntersection$y), 
-            mode = "lines", 
-            name = "No Change Target", 
-            line = list(dash = "dash", color = "purple"), 
-            showlegend = FALSE) %>%
-  ##No Change horizontal
-  add_trace(x = c(lastDate, constantXDate), 
-            y = c(constantIntersection$y, constantIntersection$y), 
-            mode = "lines", 
-            name = "No Change to Backlog Size", 
-            line = list(dash = "dash", color = "purple")) %>%
-  ##Projected Backlog Size
-  add_trace(x = c(lastDate, last5XDate), 
-            y = c(lastDateUnix * totalLast5LM$coef[2] + totalLast5LM$coef[1], totalIncreasePoints), 
-            name = "Projected Backlog Size", 
-            line = list(dash = "dash", color = "orange"), 
-            showlegend = TRUE) %>% 
-  ##Backlog Change Target
-  add_trace(x = c(last5XDate, last5XDate), 
-            y = c(0, totalIncreasePoints), 
-            mode="lines", 
-            line = list(dash = "dash", color = "orange"), 
-            showlegend = FALSE) %>%
-  ##Velocity trend
-  add_trace(x = c(lastDate, max(last5XDate, constantXDate)), 
-            y = c(lastDateUnix * completedLast5LM$coef[2] + completedLast5LM$coef[1], max(totalIncreasePoints, constantIntersection$y)), 
-            name = "Projected Velocity", 
-            line = list(dash ="dash", color = "green"), 
-            showlegend = TRUE)
-        
-
+  plot_ly(long_df, 
+          x = ~as.Date(Date), 
+          y = ~Points, 
+          color = ~Type, 
+          type = 'scatter', 
+          mode = 'lines+markers',
+          fill = 'tonexty',
+          text = ~Points) %>%
+    layout(title = ~chartTitle,
+           yaxis = list(title = ~yAxisTitle, rangemode = "tozero"),
+           xaxis = list(title = "Date", type = "date", tick0 = ~lastDateUnix * 1000, dtick = 1210000000)) %>%
+    add_text(textfont = list(family = "sans serif", size = 14, color = toRGB("grey50")), 
+             textposition = "top right", 
+             showlegend = FALSE,
+             fill = 'none') %>%
+    ##Target Release
+    add_trace(x = c(~as.Date(targetDate), ~as.Date(targetDate)),
+              y = c(0, ~max(Points)),
+              mode = "lines",
+              color = 'Target Release',
+              line = list(dash = "dash", color = "black"),
+              fill = 'none') %>%
+    ##No Change Target
+    add_trace(x = c(~constantXDate, ~constantXDate),
+              y = c(0, ~constantIntersection$y),
+              mode = "lines",
+              legendgroup = 'No Change',
+              color = "No Change Target",
+              line = list(dash = "dash", color = "purple"),
+              showlegend = FALSE,
+              fill = 'none') %>%
+    ##No Change horizontal
+    add_trace(x = c(~lastDate, ~constantXDate),
+              y = c(~constantIntersection$y, ~constantIntersection$y),
+              mode = "lines",
+              legendgroup = 'No Change',
+              color = "No Change to Backlog Size",
+              line = list(dash = "dash", color = "purple"),
+              fill = 'none') %>%
+    ##Projected Backlog Size
+    add_trace(x = c(~lastDate, ~last5XDate),
+              y = c(~lastDateUnix * totalLast5LM$coef[2] + totalLast5LM$coef[1], ~totalIncreasePoints),
+              legendgroup = 'Projected Change',
+              color = "Projected Backlog Size",
+              line = list(dash = "dash", color = "orange"),
+              showlegend = TRUE,
+              fill = 'none') %>%
+    ##Backlog Change Target
+    add_trace(x = c(~last5XDate, ~last5XDate),
+              y = c(0, ~totalIncreasePoints),
+              mode="lines",
+              legendgroup = 'Projected Change',
+              line = list(dash = "dash", color = "orange"),
+              showlegend = FALSE,
+              fill = 'none') %>%
+    ##Velocity trend
+    add_trace(x = c(~lastDate, ~max(last5XDate, constantXDate)),
+              y = c(~lastDateUnix * completedLast5LM$coef[2] + completedLast5LM$coef[1], ~max(totalIncreasePoints, constantIntersection$y)),
+              color = "Projected Velocity",
+              line = list(dash ="dash", color = "green"),
+              showlegend = TRUE,
+              fill = 'none')
 }
